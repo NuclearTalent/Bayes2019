@@ -10,7 +10,7 @@ Students are encouraged to install python and the required modules before the st
 
 Download the repo from github::
 
-    git clone https://github.com/cforssen/TALENT_Bayes.git
+    git clone https://github.com/NuclearTalent/Bayes2019
 
 The scripts depend on several scientific python modules (see
 the list in environment.yml) and require a python3.x installation. 
