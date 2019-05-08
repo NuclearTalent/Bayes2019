@@ -8,17 +8,16 @@ Students are encouraged to install python and the required modules before the st
 
 ### Installation
 
-Download the repo from github::
+Download the repo from github and enter the directory which should have been created on your computer:
 
     git clone https://github.com/NuclearTalent/Bayes2019.git
+    cd Bayes2019
 
-The scripts depend on several scientific python modules (see
-the list in environment.yml) and require a python3.x installation. 
+The notebooks that we will be using depend on several scientific python modules (see the list in environment.yml) and require a python3.x installation. 
 
-Dependencies are best installed using ``conda`` by creating
+These python modules and their dependencies are best installed using ``conda`` by creating
 a virtual environment:
 
-    cd Bayes2019
     conda env create
     conda activate talent-env
 
