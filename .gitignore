@@ -1,0 +1,33 @@
+# compiled files:
+*.o
+*.so
+*.a
+
+# temporary files:
+students are encouraged to install python and the required
+modules to test themselves the examples that were discussed at the lectures.
+.ipynb_checkpoints
+*.pyc
+*.bak
+*.swp
+*~
+.*~
+*.old
+tmp*
+temp*
+.#*
+\#*
+
+# tex files:
+*.log
+*.dvi
+*.aux
+*.blg
+*.idx
+*.nav
+*.out
+*.toc
+*.snm
+
+# misc:
+.DS_Store
