@@ -3,7 +3,9 @@
 This repository contains the learning material for the Nuclear TALENT course
 Learning from Data: Bayesian Methods and Machine Learning, in York, UK, June 10-28, 2019 
 
-Students are encouraged to install python and the required modules before the start of the school.
+Students are encouraged to install python and the required modules
+before the start of the school. Please contact the lecturers if you
+encounter problems when setting up the environment.
 
 
 ### Installation
@@ -25,9 +27,16 @@ To deactivate the virtual environment:
 
     conda deactivate
 
-Note that earlier versions of conda used 'source' instead of 'conda' to activate environments.
+Note that earlier versions of conda used 'source' instead of 'conda'
+to activate environments. If you have an earlier version of conda you
+might have to do
 
-You are encouraged to enter the intro directory and start the jupyter notebook:
+    conda update conda
+
+Note that there are also other options ('venv', 'pipenv') for creating virtual
+environments that includes the python version and packages that we will be using.
+
+Once the environment is set up and activated, you are encouraged to enter the intro directory and start the jupyter notebook:
 
     cd intro
     jupyter notebook bayesTALENT_intro.ipynb
