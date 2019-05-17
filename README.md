@@ -20,7 +20,18 @@ The notebooks that we will be using depend on several scientific python modules 
 These python modules and their dependencies are best installed using ``conda`` by creating
 a virtual environment:
 
-    conda env create
+	conda env create
+
+which reads the environment.yml file in your current directory.
+
+Some packages might not be found in the default conda channels. One
+can either specify relevant package channel(s) in the environment.yml
+file (as done here), or add them to the default conda channel configuration via, e.g,
+
+	conda config --append channels conda-forge
+
+Once the virtual environment has been created it can be activated:
+
     conda activate talent-env
 
 To deactivate the virtual environment:
