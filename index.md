@@ -29,6 +29,7 @@ The following topics will be covered:
 - [Model selection](topics/model-selection/)
 - [Special topic: Application of Bayesian methods in nuclear physics](topics/application-of-bayesian-methods-in-nuclear-physics/)
 - [Gaussian processes](topics/gaussian-processes/)
+- [Model checking](topics/model-checking/)
 - [Special topic: Bayesian methods and machine learning](topics/bayesian-methods-and-machine-learning/)
 
 ## Teachers and local organization
