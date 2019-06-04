@@ -41,7 +41,7 @@ The following topics will be covered:
 
 ### Teaching facilitators
 - John Bower, NSCL, Michigan State University, USA
-- Christian Drischler, University of Berkeley, USA
+- Christian Drischler, University of California, Berkeley, USA
 
 ### Local organizer
 - Alessandro Pastore, University of York, UK
