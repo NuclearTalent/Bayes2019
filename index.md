@@ -32,12 +32,15 @@ The following topics will be covered:
 - [Model checking](topics/model-checking/)
 - [Special topic: Bayesian methods and machine learning](topics/bayesian-methods-and-machine-learning/)
 
+Jupyter notebooks will be used extensively throughout the course. Some notebooks introducing notebooks can be found [here](topics/jupyter-and-python-basics/)
+
+
 ## Teachers and local organization
 
 ### Lecturers: 
 - Christian Forssén, Chalmers University of Technology, Sweden
 - Dick Furnstahl, Ohio State University, USA 
-- Daniel Phillips, Ohio University, USA
+- Daniel Phillips, Ohio University, USA; TU Darmstadt and EMMI, Germany
 
 ### Teaching facilitators
 - John Bower, NSCL, Michigan State University, USA
