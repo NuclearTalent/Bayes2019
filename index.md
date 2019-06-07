@@ -62,8 +62,8 @@ Time | Activity
 10.30 - 11.00 | Coffee break
 11.00 - 12.30 | Lecture 2
 12.30 - 14.00 | Lunch
-14.00 - 17.00 | Exercise session with afternoon break
-17.00 - 18.00 | Wrap-up
+14.00 - 16.30 | Exercise session with afternoon tea break
+16.30 - 17.30 | Wrap-up
 
 This page was automatically created with GitHub’s automatic Markdown rendering. More on the Markdown syntax on this [GitHub guide](https://help.github.com/en/articles/basic-writing-and-formatting-syntax) or [GitHub help](https://help.github.com/en/articles/basic-writing-and-formatting-syntax).
 
