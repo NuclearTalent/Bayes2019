@@ -1,3 +1,5 @@
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
 # Discussion topics and frequently asked questions
 
 Here we collect questions on Bayesian statistics and its application to nuclear physics problems. Some of these are also asked in other Jupyter notebooks. Participants are strongly encouraged to try these questions and propose answers, and also to suggest new questions to be added. 
