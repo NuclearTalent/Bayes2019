@@ -32,7 +32,9 @@ The following topics will be covered:
 - [Model checking](topics/model-checking/)
 - [Special topic: Bayesian methods and machine learning](topics/bayesian-methods-and-machine-learning/)
 
-Jupyter notebooks will be used extensively throughout the course. Some notebooks introducing notebooks can be found [here](topics/jupyter-and-python-basics/)
+Jupyter notebooks will be used extensively throughout the course. Some notebooks introducing notebooks can be found [here](topics/jupyter-and-python-basics/).
+
+Questions on Bayesian statistics and its application to nuclear physics problems are collected [here](discussion_questions/). Participants are strongly encouraged to try these questions and propose answers, and also to suggest new questions to be added. 
 
 
 ## Teachers and local organization
