@@ -34,8 +34,8 @@ The following topics will be covered:
 
 Jupyter notebooks will be used extensively throughout the course. Some notebooks introducing notebooks can be found [here](topics/jupyter-and-python-basics/).
 
-Questions on Bayesian statistics and its application to nuclear physics problems are collected [here](discussion_questions/). Participants are strongly encouraged to try these questions and propose answers, and also to suggest new questions to be added. 
-
+### Discussion questions
+Questions on Bayesian statistics and its application to nuclear physics problems are collected [in this FAQ page](discussion_questions/). Participants are strongly encouraged to try these questions and propose answers, and also to suggest new questions to be added. 
 
 ## Teachers and local organization
 

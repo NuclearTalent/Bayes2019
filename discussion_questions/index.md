@@ -5,19 +5,17 @@ Here we collect questions on Bayesian statistics and its application to nuclear 
 ## <a name="Categories">Categories</a> 
 
 <ul>
-    <li><a href="#Basics">Bayesian basics</a>    
-    <li><a href="#PDFs">All about pdfs</a>    
-    <li><a href="#Frequentist">Bayesian vs. Frequentist</a>
-    <li><a href="#ParamEst">Parameter estimation</a>
-    <li><a href="#Sampling">Sampling</a>    
-    <li><a href="#Selection">Model selection</a>    
-    <li><a href="#Checking">Model checking</a>    
-    <li><a href="#GPs">Gaussian processes</a>    
-    <li><a href="#Machine">Bayesian machine learning</a>
-    <li><a href="#Refs">References, links, etc.</a>
+    <li><a href="#Basics">Bayesian basics</a></li>    
+    <li><a href="#PDFs">All about pdfs</a></li>    
+    <li><a href="#Frequentist">Bayesian vs. Frequentist</a></li>
+    <li><a href="#ParamEst">Parameter estimation</a></li>
+    <li><a href="#Sampling">Sampling</a></li>
+    <li><a href="#Selection">Model selection</a></li>    
+    <li><a href="#Checking">Model checking</a></li>    
+    <li><a href="#GPs">Gaussian processes</a></li>    
+    <li><a href="#Machine">Bayesian machine learning</a></li>
+    <li><a href="#Refs">References, links, etc.</a></li>
 </ul>
-
-<hr>
 
 ## <a name="Basics">Bayesian basics</a>
 
