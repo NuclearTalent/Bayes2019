@@ -1,4 +1,4 @@
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+{% include mathjax.html %}
 
 # Discussion topics and frequently asked questions
 
@@ -21,10 +21,15 @@ Here we collect questions on Bayesian statistics and its application to nuclear 
 
   
 1. What are the best references for learning more about Bayesian statistics?   
+
 1. Under what assumption(s) do sequential and one-step updating of Bayesian posteriors give the same answer?  Demonstrate the equivalence under the appropriate conditions.  (Suggestion: start with two data.)   
+
 1. How should I choose a prior? 
+
 1. What is a "non-informative" prior?  What is a "weakly informative" prior?   
+
 1. What are the common or subtle pitfalls that novices to Bayesian methods fall into?        
+
 1. Why can't I re-use data to update a posterior?
  
 
@@ -38,7 +43,7 @@ Here we collect questions on Bayesian statistics and its application to nuclear 
 
 1. Why is a normal (Gaussian) distribution so often a good statistical model? 
 
-1. How are the sum of two Gaussian variables distributed?  E.g., if $$X \sim \mathcal{N}(\mu_x, \sigma_x^2)$$ and $Y \sim \mathcal{N}(\mu_y, \sigma_y^2)$, then how is $X + Y$ distributed?  How about $X - Y$?  How about $aX + bY$, where $a$ and $b$ are constants (scalars)? How do you prove these? 
+1. How are the sum of two Gaussian variables distributed?  E.g., if $$X \sim \mathcal{N}(\mu_x, \sigma_x^2)$$ and $$Y \sim \mathcal{N}(\mu_y, \sigma_y^2)$$, then how is $$X + Y$$ distributed?  How about $$X - Y$$?  How about $$aX + bY$$, where $$a$$ and $$b$$ are constants (scalars)? How do you prove these? 
 
 1. How are the sum of two vectors of correlated Gaussian variables distributed? 
 
