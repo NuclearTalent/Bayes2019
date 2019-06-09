@@ -36,7 +36,7 @@ Here we collect questions on Bayesian statistics and its application to nuclear 
 
 1. Why is a normal (Gaussian) distribution so often a good statistical model? 
 
-1. How are the sum of two Gaussian variables distributed?  E.g., if $X \sim \mathcal{N}(\mu_x, \sigma_x^2)$ and $Y \sim \mathcal{N}(\mu_y, \sigma_y^2)$, then how is $X + Y$ distributed?  How about $X - Y$?  How about $aX + bY$, where $a$ and $b$ are constants (scalars)? How do you prove these? 
+1. How are the sum of two Gaussian variables distributed?  E.g., if $$X \sim \mathcal{N}(\mu_x, \sigma_x^2)$$ and $Y \sim \mathcal{N}(\mu_y, \sigma_y^2)$, then how is $X + Y$ distributed?  How about $X - Y$?  How about $aX + bY$, where $a$ and $b$ are constants (scalars)? How do you prove these? 
 
 1. How are the sum of two vectors of correlated Gaussian variables distributed? 
 
