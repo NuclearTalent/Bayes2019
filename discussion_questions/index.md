@@ -4,34 +4,26 @@ Here we collect questions on Bayesian statistics and its application to nuclear 
 
 ## <a name="Categories">Categories</a> 
 
-<ul>
-    <li><a href="#Basics">Bayesian basics</a></li>    
-    <li><a href="#PDFs">All about pdfs</a></li>    
-    <li><a href="#Frequentist">Bayesian vs. Frequentist</a></li>
-    <li><a href="#ParamEst">Parameter estimation</a></li>
-    <li><a href="#Sampling">Sampling</a></li>
-    <li><a href="#Selection">Model selection</a></li>    
-    <li><a href="#Checking">Model checking</a></li>    
-    <li><a href="#GPs">Gaussian processes</a></li>    
-    <li><a href="#Machine">Bayesian machine learning</a></li>
-    <li><a href="#Refs">References, links, etc.</a></li>
-</ul>
+- <a href="#Basics">Bayesian basics</a>    
+- <a href="#PDFs">All about pdfs</a>    
+- <a href="#Frequentist">Bayesian vs. Frequentist</a>
+- <a href="#ParamEst">Parameter estimation</a>
+- <a href="#Sampling">Sampling</a>
+- <a href="#Selection">Model selection</a>    
+- <a href="#Checking">Model checking</a>    
+- <a href="#GPs">Gaussian processes</a>    
+- <a href="#Machine">Bayesian machine learning</a>
+- <a href="#Refs">References, links, etc.</a>
 
 ## <a name="Basics">Bayesian basics</a>
 
   
 1. What are the best references for learning more about Bayesian statistics?   
-  
-1. Under what assumption(s) do sequential and one-step updating of Bayesian posteriors give the same answer?  Demonstrate the equivalence under the appropriate conditions.  (Suggestion: start with two data.) 
-  
+1. Under what assumption(s) do sequential and one-step updating of Bayesian posteriors give the same answer?  Demonstrate the equivalence under the appropriate conditions.  (Suggestion: start with two data.)   
 1. How should I choose a prior? 
-
-1. What is a "non-informative" prior?  What is a "weakly informative" prior? 
-  
-1. What are the common or subtle pitfalls that novices to Bayesian methods fall into?     
-    
+1. What is a "non-informative" prior?  What is a "weakly informative" prior?   
+1. What are the common or subtle pitfalls that novices to Bayesian methods fall into?        
 1. Why can't I re-use data to update a posterior?
-    
  
 
 <p>[Return to <a href="#Categories">Categories</a>]</p>
