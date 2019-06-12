@@ -2,6 +2,8 @@
 
 ### Lecture 1: 
 Dick Furnstahl, 2019-06-12
+
+* [Scanned lecture notes](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/bayesian-parameter-estimation/Lecture_W1a_rjf.pdf)
 * [Visualization of MCMC sampling (Richard McElreath)](http://elevanth.org/blog/2017/11/28/build-a-better-markov-chain/)
 * [Metropolis Poisson example [ipynb]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/mcmc-sampling/Metropolis_Poisson_example.ipynb)
 
