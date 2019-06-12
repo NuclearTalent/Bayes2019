@@ -10,8 +10,6 @@ Dick Furnstahl, 2019-06-10
 * [Parameter estimation: fitting a straight line [ipynb]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/bayesian-parameter-estimation/parameter_estimation_fitting_straight_line_I.ipynb
 )
 
-parameter_estimation_fitting_straight_line_I.ipynb
-
 
 ### Lecture 2: 
 Dick Furnstahl, 2019-06-11
