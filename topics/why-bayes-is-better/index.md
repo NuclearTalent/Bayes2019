@@ -11,7 +11,8 @@ Christian Forss&eacute;n, 2019-06-12
 
 ### Lecture 2: 
 Christian Forss&eacute;n, 2019-06-14
+- Error propagation
 - Dealing with outliers
-- Fitting in the presence of higher order terms
+* [Why Bayes is Better II [ipynb]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/why-bayes-is-better/why_bayes_is_better_II.ipynb)
 
 ### Exercises
