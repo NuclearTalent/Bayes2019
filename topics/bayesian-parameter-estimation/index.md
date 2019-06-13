@@ -21,4 +21,10 @@ Dick Furnstahl, 2019-06-11
 ### Lecture 3: 
 Dick Furnstahl, 2019-06-13
 
+* [Scanned lecture notes](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/bayesian-parameter-estimation/Lecture_Th1a_rjf.pdf)
+
+* [Signal and background recap [ipynb]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/bayesian-parameter-estimation/amplitude_in_presence_of_background_RECAP.ipynb)
+
+* [Data analysis recipes: Fitting a model to data](https://arxiv.org/abs/1008.4686) --- article from Hogg, Bovy, and Lang about real-world fitting (many interesting annotations!).
+
 ### Exercises
