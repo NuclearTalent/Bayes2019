@@ -10,6 +10,9 @@ Dick Furnstahl, 2019-06-12
 
 ### Lecture 2: 
 Christian Forss&eacute;n, 2019-06-13
+* [MCMC diagnostics [ipynb]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/mcmc-sampling/MCMC-diagnostics.ipynb)
+* [MCMC PT [ipynb]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/mcmc-sampling/MCMC-PT.ipynb.ipynb)
+
 
 ### Lecture 3: 
 Dick Furnstahl, 2019-06-20
