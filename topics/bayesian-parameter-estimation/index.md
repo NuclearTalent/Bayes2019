@@ -16,6 +16,8 @@ Dick Furnstahl, 2019-06-11
 
 * [Scanned lecture notes](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/bayesian-parameter-estimation/Lecture_T1b_rjf.pdf)
 
+* [Exploring pdfs [ipynb]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/basics-of-bayesian-statistics/Exploring_pdfs.ipynb)
+
 * [Signal and background [ipynb]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/bayesian-parameter-estimation/amplitude_in_presence_of_background.ipynb)
 
 ### Lecture 3: 
