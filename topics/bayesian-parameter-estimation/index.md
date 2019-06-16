@@ -3,11 +3,11 @@
 ### Lecture 1: 
 Dick Furnstahl, 2019-06-10
 
-* [Scanned lecture notes](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/bayesian-parameter-estimation/Lecture_M1b_rjf.pdf)
+* [Scanned lecture notes](Lecture_M1b_rjf.pdf)
 
-* [Intro notebook revisited [ipynb]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/bayesian-parameter-estimation/parameter_estimation_in_bayesTALENT_intro.ipynb)
+* [Intro notebook revisited [ipynb]](parameter_estimation_in_bayesTALENT_intro.ipynb)
 
-* [Parameter estimation: fitting a straight line [ipynb]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/bayesian-parameter-estimation/parameter_estimation_fitting_straight_line_I.ipynb
+* [Parameter estimation: fitting a straight line [ipynb]](parameter_estimation_fitting_straight_line_I.ipynb)
 )
 
 
