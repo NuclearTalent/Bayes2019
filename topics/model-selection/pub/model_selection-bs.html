@@ -1,0 +1,369 @@
+<!--
+Automatically generated HTML file from DocOnce source
+(https://github.com/hplgit/doconce/)
+-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="DocOnce: https://github.com/hplgit/doconce/" />
+<meta name="description" content="Learning from data: Model Selection (I)">
+
+<title>Learning from data: Model Selection (I)</title>
+
+<!-- Bootstrap style: bootstrap -->
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+<!-- not necessary
+<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+-->
+
+<style type="text/css">
+
+/* Add scrollbar to dropdown menus in bootstrap navigation bar */
+.dropdown-menu {
+   height: auto;
+   max-height: 400px;
+   overflow-x: hidden;
+}
+
+/* Adds an invisible element before each target to offset for the navigation
+   bar */
+.anchor::before {
+  content:"";
+  display:block;
+  height:50px;      /* fixed header height for style bootstrap */
+  margin:-50px 0 0; /* negative fixed header height */
+}
+</style>
+
+
+</head>
+
+<!-- tocinfo
+{'highest level': 1,
+ 'sections': [('Model selection example: Based on a true story',
+               1,
+               None,
+               '___sec0'),
+              ('The Story of Dr. A and Prof. B', 1, None, '___sec1'),
+              ('One adjustable parameter each', 2, None, '___sec2'),
+              ('One adjustable parameter each; different prior ranges',
+               2,
+               None,
+               '___sec3'),
+              ('Comparison with parameter estimation', 2, None, '___sec4'),
+              ('Evidence calculations', 1, None, '___sec5'),
+              ("Laplace's method", 1, None, '___sec6')]}
+end of tocinfo -->
+
+<body>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: {
+     equationNumbers: {  autoNumber: "AMS"  },
+     extensions: ["AMSmath.js", "AMSsymbols.js", "autobold.js", "color.js"]
+  }
+});
+</script>
+<script type="text/javascript" async
+ src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+    
+<!-- Bootstrap navigation bar -->
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="model_selection-bs.html">Learning from data: Model Selection (I)</a>
+  </div>
+
+  <div class="navbar-collapse collapse navbar-responsive-collapse">
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contents <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+     <!-- navigation toc: --> <li><a href="#___sec0" style="font-size: 80%;"><b>Model selection example: Based on a true story</b></a></li>
+     <!-- navigation toc: --> <li><a href="#___sec1" style="font-size: 80%;"><b>The Story of Dr. A and Prof. B</b></a></li>
+     <!-- navigation toc: --> <li><a href="#___sec2" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;One adjustable parameter each</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec3" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;One adjustable parameter each; different prior ranges</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec4" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Comparison with parameter estimation</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec5" style="font-size: 80%;"><b>Evidence calculations</b></a></li>
+     <!-- navigation toc: --> <li><a href="#___sec6" style="font-size: 80%;"><b>Laplace's method</b></a></li>
+
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+</div> <!-- end of navigation bar -->
+
+<div class="container">
+
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p> <!-- add vertical space -->
+
+<!-- ------------------- main content ---------------------- -->
+
+
+
+<div class="jumbotron">
+<center><h1>Learning from data: Model Selection (I)</h1></center>  <!-- document title -->
+
+<p>
+<!-- author(s): Christian Forss&#233;n -->
+
+<center>
+<b>Christian Forss&#233;n</b> 
+</center>
+
+<p>
+<!-- institution -->
+
+<center><b>Department of Physics, Chalmers University of Technology, Sweden</b></center>
+<br>
+<p>
+<center><h4>Jun 16, 2019</h4></center> <!-- date -->
+<br>
+<p>
+So far, we have been concerned with the problem of parameter estimation. In studying the linear relationship between two quantities, for example, we discussed how to infer the slope and the offset of the associated straight-line model. Often, however, there is a question as to whether a quadratic, or even cubic, function might be more a more appropriate model. In this lecture, we will consider the broad class of scientific problems when there is uncertainty as to which one of a set of alternative models is most suitable. In the Bayesian terminology these can be labeled as <b>Model Selection</b> problems and we will discuss them in some depth.
+
+<p>
+<center>  <!-- FIGURE -->
+<hr class="figure">
+<center><p class="caption">Figure 1:  Missing-mass spectrum of the tetraneutron system measured by the double charge-exchange reaction of Helium-8 projectiles impinging on a Helium-4 target at RIBF. </p></center>
+<p><img src="tetraneutron.png" align="bottom" width=500></p>
+</center>
+
+<p>
+</div> <!-- end jumbotron -->
+
+<h1 id="___sec0" class="anchor">Model selection example: Based on a true story </h1>
+<!-- !split  -->
+
+<p>
+<blockquote>
+    <em>Dr. A has a theory; Prof. B also has a theory, but with an adjustable parameter \( \lambda \). Whose theory should we prefer on the basis of data \( D \)?</em>&mdash; Jefferys (1939), Gull (1988), Sivia (2006)
+</blockquote>
+
+
+<p>
+<!-- !split -->
+<!-- ======= The Story of Dr. A and Prof. B  <div id="___sec1"></div>======= -->
+
+<h1>The Story of Dr. A and Prof. B</h1>
+[Reproduced, with some modifications, from Sivia, 2006].
+
+<p>
+it is clear that we need to evaluate the posterior probabilities for A and B being correct to ascertain the relative merit of the two theories. If the ratio of the posterior probabilities,
+$$
+\begin{equation}
+\text{posterior ratio} = \frac{p(A |D, I )}{p(B|D,I)}
+\label{eq:sivia_41}
+\end{equation}
+$$
+
+is very much greater than one, then we will prefer A&#8217;s theory; if it is very much less than one, then we prefer that of B; and if it is of order unity, then the current data are insufficient to make an informed judgement.
+
+<p>
+To estimate the odds, let us start by applying Bayes&#8217; theorem to both the numerator and the denominator; this gives
+$$
+\begin{equation}
+\frac{p(A|D,I)}{p(B|D,I)} = \frac{p(D|A,I) p(A|I)}{p(D|B,I) p(B|I)}
+\label{eq:sivia_42}
+\end{equation}
+$$
+
+because the term \( p(D|I) \) cancels out, top and bottom. As usual, probability theory warns us immediately that the answer to our question depends partly on what we thought about the two theories before the analysis of the data. To be fair, we might take the ratio of the prior terms, on the far right of Eq. \eqref{eq:sivia_42}, to be unity; a harsher assignment could be based on the past track records of the theorists! To assign the probabilities involving the experimental measurements, \( p(D|A,I) \) and \( p(D|B,I) \), we need to be able to compare the data with the predictions of A and B: the larger the mismatch, the lower the corresponding probability. This calculation is straightforward for Dr A, but not for Prof B; the latter cannot make predictions without a value for \( \lambda \).
+
+<p>
+To circumvent this difficulty, we can use the sum and product rule to relate the probability we require to other pdfs which might be easier to assign. In particular, marginalization and the product rule allow us to express \( p(D | B , I ) \) as
+$$
+\begin{equation}
+p(D|B,I) = \int d\lambda p(D,\lambda|B,I) = 
+\int d\lambda p(D|\lambda,B,I) p(\lambda|B,I). 
+\label{eq:sivia_43}
+\end{equation}
+$$
+
+The first term in the integral \( p(D | \lambda, B , I ) \), where the value of \( \lambda \) is given, is now just an ordinary likelihood function; as such, it is on a par with \( p(D|A,I) \). The second term is B&#8217;s prior pdf for \( \lambda \); the onus is, therefore, on the theorist to articulate his or her state of knowledge, or ignorance, before getting access to the data.
+
+<p>
+To proceed further analytically, let us make some simplifying approximations. Assume that, a priori, Prof B is only prepared to say that \( \lambda \) must lie between the limits \( \lambda_\mathrm{min} \) and \( \lambda_\mathrm{max} \); we can then naively assign a uniform prior within this range:
+$$
+\begin{equation}
+p(\lambda|B,I) = \frac{1}{\lambda_\mathrm{max}-\lambda_\mathrm{min}} \quad \text{for } \lambda_\mathrm{min} \leq \lambda \leq \lambda_\mathrm{max}, 
+\label{eq:sivia_44}
+\end{equation}
+$$
+
+and zero otherwise. Let us also take it that there is a value \( \lambda_0 \) which yields the closest agreement with the measurements; the corresponding probability \( p(D|\lambda_0,B,I) \) will be the maximum of B&#8217;s likelihood function. As long as this adjustable parameter lies in the neighbourhood of the optimal value, \( \lambda_0 \pm \delta\lambda \), we would expect a reasonable fit to the data; this can be represented by the Gaussian pdf
+$$
+\begin{equation}
+p(D|\lambda,B,I) = p(D|\lambda_0,B,I) \exp \left[ − \frac{(\lambda−\lambda_0)^2}{2\delta\lambda^2} \right]. 
+\label{eq:sivia_45}
+\end{equation}
+$$
+
+The assignments of the prior \eqref{eq:sivia_44} and the likelihood \eqref{eq:sivia_45} are illustrated in Fig. <a href="#fig:sivia_41">2</a>. We may note that, unlike the prior pdf \( p(\lambda|B,I) \), B&#8217;s likelihood function need not be normalized with respect to \( \lambda \); in other words, \( p(D|\lambda_0,B,I) \) need not equal \( 1/ \delta\lambda 2\pi \) . This is because the \( \lambda \) in \( p(D|\lambda,B,I) \) appears in the conditioning statement, whereas the normalization requirement applies to quantities to the left of the &#8216;|&#8217; symbol.
+
+<p>
+<center> <!-- figure label: --> <div id="fig:sivia_41"></div> <!-- FIGURE -->
+<hr class="figure">
+<center><p class="caption">Figure 2:  A schematic representation of the prior pdf (dashed line) and the likelihood function (solid line) for the parameter \( \lambda \) in Prof B&#8217;s theory.  <!-- caption label: fig:sivia_41 --> </p></center>
+<p><img src="fig41.png" align="bottom" width=500></p>
+</center>
+
+<p>
+In the evaluation of \( p(D | B , I ) \), we can make use of the fact that the prior does not depend explicitly on \( \lambda \); this enables us to take \( p(\lambda|B,I) \) outside the integral in Eq. \eqref{eq:sivia_43}
+$$
+\begin{equation}
+p(D|B,I) = \frac{1}{\lambda_\mathrm{max} - \lambda_\mathrm{min}} \int_{\lambda_\mathrm{min}}^{\lambda_\mathrm{max}} d\lambda
+p(D|\lambda,B,I),
+\label{eq:sivia_46}
+\end{equation}
+$$
+
+having set the limits according to the specified range. Assuming that the sharp cut-offs
+do not cause a significant truncation of the Gaussian pdf of the likelihood,
+its integral will be equal to \( \delta\lambda (2\pi) \) times \( p(D|\lambda_0,B,I) \). The troublesome term then reduces to
+$$
+p(D|B,I) = \frac{1}{\lambda_\mathrm{max} - \lambda_\mathrm{min}} p(D|\lambda_0,B,I) \delta\lambda 2\pi.
+$$
+Substituting this into Eq. \eqref{eq:sivia_42}, we finally see that the ratio of the posteriors required to answer our original question decomposes into the product of three terms:
+$$
+\begin{equation}
+\frac{p(A|D,I)}{p(B|D,I)} =  \frac{p(A|I)}{p(B|I)} \times \frac{p(D|A,I)}{p(D|\lambda_0,B,I)} \times \frac{\lambda_\mathrm{max} - \lambda_\mathrm{min}}{\delta\lambda (2\pi)}. 
+\label{eq:sivia_48}
+\end{equation}
+$$
+
+The first term on the right-hand side reflects our relative prior preference for the alternative theories; to be fair, we can take it to be unity. The second term is a measure of how well the best predictions from each of the models agree with the data; with the added flexibility of his adjustable parameter, this maximum likelihood ratio can only favour B. The goodness-of-fit, however, cannot be the only thing that matters; if it was, we would always prefer more complicated explanations. Probability theory tells us that there is, indeed, another term to be considered. As assumed earlier in the evaluation of the marginal integral of Eq. \eqref{eq:sivia_43}, the prior range \( \lambda_\mathrm{max} - \lambda_\mathrm{min} \) will generally be much larger than the uncertainty \( \pm\delta\lambda \) permitted by the data. As such, the final term in Eq. \eqref{eq:sivia_48} acts to penalize B for the additional parameter; for this reason, it is often called an Ockham factor. That is to say, we have naturally encompassed the spirit of Ockham&#8217;s Razor: <em>&#8216;Frustra fit per plura quod potest fieri per pauciora&#8217;</em> or, in English, <em>&#8216;it is vain to do with more what can be done with fewer&#8217;</em> .
+
+<p>
+Although it is satisfying to quantify the everyday guiding principle attributed to the thirteenth-century Franciscan monk William of Ockham (or Occam, in Latin), that we should prefer the simplest theory which agrees with the empirical evidence, we should not get too carried away by it. After all, what do we mean by the simpler theory if alternative models have the same number of adjustable parameters? In the choice between Gaussian and Lorentzian peak shapes, for example, both are defined by the position of the maximum and their width. All that we are obliged to do, and have done, in addressing such questions is to adhere to the rules of probability.
+
+<p>
+While accepting the clear logic leading to Eq \eqref{eq:sivia_48}, many people rightly worry about the question of the limits \( \lambda_\mathrm{min} \) and \( \lambda_\mathrm{max} \). Jeffreys (1939) himself was concerned and pointed out that there would be an infinite penalty for any new parameter if the range was allowed to go to \( \pm\infty \). Stated in the abstract, this would appear to be a severe limitation. In practice, however, it is not generally such a problem: since the analysis is always used in specific contexts, a suitable choice can usually be made on the basis of the relevant background information. Even in uncharted territory, a small amount of thought soon reveals that our state of ignorance is always far from the \( \pm\infty \) scenario. If \( \lambda \) was the coupling constant (or strength) for a possible fifth force, for example, then we could put an upper bound on its magnitude because everybody would have noticed it by now if it had been large enough! We should also not lose sight of the fact that the precise form of Eq \eqref{eq:sivia_48} stems from our stated simplifying approximations; if these are not appropriate, then eqns \eqref{eq:sivia_42} and \eqref{eq:sivia_43} will lead us to a somewhat different formula.
+
+<p>
+In most cases, our relative preference for A or B is dominated by the goodness of the fit to the data; that is to say, the maximum likelihood ratio in eqn \eqref{eq:sivia_48} tends to overwhelm the contributions of the other two terms. The Ockham factor can play a crucial role, however, when both theories give comparably good agreement with the measurements. Indeed, it becomes increasingly important if B&#8217;s theory fails to give a significantly better fit as the quality of the data improves. In that case, \( \delta\lambda \) continues to become smaller but the ratio of best-fit likelihoods remains close to unity; according to Eq. \eqref{eq:sivia_48}, therefore, A&#8217;s theory is favoured ever more strongly. By the same token, the Ockham effect disappears if the data are either few in number, of poor quality or just fail to shed new light on the problem at hand. This is simply because the posterior ratio of Eq. \eqref{eq:sivia_48} is then roughly equal to the complementary prior one, since the empirical evidence is very weak; hence, there is no inherent preference for A&#8217;s theory unless it is explicitly encoded in \( p(A|I)/prob(B|I) \). This property can be verified formally by going back to Eqs. \eqref{eq:sivia_42}, \eqref{eq:sivia_45} and \eqref{eq:sivia_46}, and considering the poor-data limit in which 
+\( \delta\lambda \gg \lambda_\mathrm{max}-\lambda_\mathrm{min} \) and \( p(D|\lambda_0,B,I) \approx p(D|A,I) \).
+
+<h2 id="___sec2" class="anchor">One adjustable parameter each </h2>
+Some further interesting features arise when we consider the case where Dr A also has one adjustable parameter; call it \( \mu \). If we make the same sort of probability assign- ments, and simplifying approximations, as for Prof B, then we find that
+$$
+\begin{equation}
+\frac{p(A|D,I)}{p(B|D,I)} =  \frac{p(A|I)}{p(B|I)} \times \frac{p(D|\mu_0,A,I)}{p(D|\lambda_0,B,I)} \times \frac{\delta\mu(\lambda_\mathrm{max} - \lambda_\mathrm{min})}{\delta\lambda(\mu_\mathrm{max} - \mu_\mathrm{min})}. 
+\label{eq:sivia_49}
+\end{equation}
+$$
+
+This could represent the situation where we have to choose between a Gaussian and Lorentzian shape for a signal peak, but one associated parameter is not known. The position of the maximum may be fixed at the origin by theory, for example, and the amplitude constrained by the normalization of the data; A and B could then be the hypotheses favouring the alternative lineshapes, where \( \mu \) and \( \lambda \) are their related full- width-half-maxima. If we give equal weight to A and B before the analysis, and assign a similar large prior range for both \( \mu \) and \( \lambda \), then Eq. \eqref{eq:sivia_49} reduces to
+$$
+\frac{p(A|D,I)}{p(B|D,I)} \approx  \frac{p(D|\mu_0,A,I)}{p(D|\lambda_0,B,I)} \times \frac{\delta\mu}{\delta\lambda}. 
+$$
+For data of good quality, the dominant factor will tend to be the best-fit likelihood ratio. If both give comparable agreement with the measurements, however, then the shape with the larger error-bar for its associated parameter will be favoured. At first sight, it might seem rather odd that the less discriminating theory can gain the upper hand. It appears less strange once we realize that, in the context of model selection, a larger &#8216;error-bar&#8217; means that more parameter values are consistent with the given hypothesis; hence its preferential treatment.
+
+<h2 id="___sec3" class="anchor">One adjustable parameter each; different prior ranges </h2>
+Finally, we can also consider the situation where Mr A and Mr B have the same physical theory but assign a different prior range for \( \lambda \) (or \( \mu \)). Although Eq. \eqref{eq:sivia_48} can be seen as representing the case when \( (\mu_\mathrm{max} - \mu_\mathrm{min}) \) is infinitesimally small, so that A has no flexibility, Eq. \eqref{eq:sivia_49} is more appropriate when the limits set by both theorists are large enough to encompass all the parameter values giving a reasonable fit to the data. With equal initial weighting towards A and B, the latter reduces to
+$$
+\frac{p(A|D,I)}{p(B|D,I)} =  \frac{\lambda_\mathrm{max} - \lambda_\mathrm{min}}{\mu_\mathrm{max} - \mu_\mathrm{min}}. 
+$$
+because the best-fit likelihood ratio will be unity (since \( \lambda_0 = \mu_0 \)) and \( \delta\lambda = \delta\mu \). Thus, our analysis will lead us to prefer the theorist who gives the narrower prior range; this is not unreasonable as he must have had some additional insight to be able to predict the value of the parameter more accurately.
+
+<h2 id="___sec4" class="anchor">Comparison with parameter estimation </h2>
+The dependence of the result in Eq. \eqref{eq:sivia_48} on the prior range \( (\lambda_\mathrm{max} - \lambda_\mathrm{min}) \) can seem a little strange, since we haven&#8217;t encountered such behaviour in the preceding chapters. It is instructive, therefore, to compare the model selection analysis with parameter estimation. To infer the value of \( \lambda \) from the data, given that B&#8217;s theory is correct, we use Bayes&#8217; theorem:
+$$
+\begin{equation}
+p(\lambda|D,B,I) = \frac{p(D|\lambda,B,I) p(\lambda|B,I)}{p(D|B,I)}. 
+\label{eq:sivia_410}
+\end{equation}
+$$
+
+The numerator is the familiar product of a prior and likelihood, and the denominator is usually omitted since it does not depend explicitly on \( \lambda \); hence this relationship is often written as a proportionality. From the story of Dr A and Prof B, however, we find that the neglected term on the bottom plays a crucial role in ascertaining the merit of B&#8217;s theory relative to a competing alternative. In recognition of its new-found importance, the denominator in Bayes&#8217; theorem is sometimes called the <b>&#8216;evidence&#8217;</b> for B; it is also referred to as the &#8216;marginal likelihood&#8217;, the &#8216;global likelihood&#8217; and the &#8216;prior predictive&#8217;. Since all the components necessary for both parameter estimation and model selection appear in Eq. \eqref{eq:sivia_410}, we are not dealing with any new principles; the only thing that sets them apart is that we are asking different questions of the data.
+
+<p>
+A simple way to think about the difference between parameter estimation and model selection is to note that, to a good approximation, the former requires the location of the maximum of the likelihood function whereas the latter entails the calculation of its average value. As long as \( \lambda_\mathrm{min} \) and \( \lambda_\mathrm{max} \) encompass the significant region of \( p(D|\lambda,B,I) \) around \( \lambda_0 \), the precise bounds do not matter for estimating the optimal parameter and need not be specified. Since the prior range defines the domain over which the mean likelihood is computed, due thought is necessary when dealing with model selection. Indeed, it is precisely this act of comparing &#8216;average&#8217; likelihoods rather than &#8216;maximum&#8217; ones which introduces the desired Ockham balance to the goodness- of-fit criterion. Any likelihood gain from a better agreement with the data, allowed by the greater flexibility of a more complicated model, has to be weighed against the additional cost of averaging it over a larger parameter space.
+
+<p>
+<!-- !split -->
+
+<h1 id="___sec5" class="anchor">Evidence calculations </h1>
+The actual computation of Bayesian evidences can be a challenging task. Recall that we often have knowledge of the posterior distribution only through sampling. In many cases, the simple Laplace method can be used to compute the evidence approximately, while in other cases we have to rely on special sampling algorithms such as nested sampling or parallel tempering with thermodynamic integration.
+
+<p>
+<!-- ===== Laplace's method ===== -->
+
+<h1 id="___sec6" class="anchor">Laplace's method </h1>
+The idea behind the Laplace approximation is simple. We assume that an unnormalized probability density \( P^*(\theta) \) has a peak at a point \( \theta_0 \). We are interested in the evidence, \( Z_P \), which is given by the normalizing constant
+$$
+Z_P = \int P^*(\theta) d^K\theta,
+$$ 
+where we consider the general case in which \( \theta \) is in a \( K \)-dimensional space.
+
+<p>
+We Taylor-expand the logarithm \( \log P^* \) around the peak:
+$$
+\log P^*(\theta) = \log P^*(\theta_0) - \frac{1}{2} (\theta - \theta_0)^T \Sigma^{-1} (\theta - \theta_0) + \ldots,
+$$
+where \( \Sigma^{-1} = H \) is the (Hessian) matrix of second derivatives at the maximum
+$$
+H_{ij} = - \left. \frac{\partial^2}{\partial \theta_i \partial \theta_j}  \log P^*(\theta)\right|_{\theta=\theta_0}.
+$$
+We then approximate \( P^*(\theta) \) by an unnormalized Gaussian, 
+$$
+Q^*(\theta) \equiv P^*(\theta_0) \exp \left[ - \frac{1}{2}(\theta - \theta_0)^T \Sigma^{-1} (\theta - \theta_0) \right],
+$$
+and we approximate the normalizing constant \( Z_P \) by the normalizing constant
+of this Gaussian,
+$$
+Z_P \approx Z_Q = P^*(\theta_0) \sqrt{\frac{(2\pi)^K}{\det\Sigma^{-1}}}.
+$$
+Predictions can then be made using this approximation \( Q \). Physicists also call this widely-used approximation the saddle-point approximation.
+
+<p>
+The fact that the normalizing constant of a Gaussian is given by 
+$$
+\int d^K\theta \exp \left[ - \frac{1}{2}\theta^T \Sigma^{-1} \theta \right] = \sqrt{\frac{(2\pi)^K}{\det\Sigma^{-1}}},
+$$
+can be proved by making an orthogonal transformation into the basis \( u \) in which \( \Sigma \) is transformed into a diagonal matrix. The integral then separates into a product of one-dimensional integrals, each of the form
+$$
+\int du_i \exp \left[ -\frac{1}{2} \lambda_i u_i^2 \right] = \sqrt{\frac{2\pi}{\lambda_i}}
+$$
+The product of the eigenvalues \( \lambda_i \) is the determinant of \( \Sigma^{-1} \).
+
+<p>
+Note that the Laplace approximation is basis-dependent: if \( \theta \) is transformed to a nonlinear function \( u(\theta) \) and the density is transformed to \( P(u) = P(\theta) |d\theta/du| \) then in general the approximate normalizing constants \( Z_Q \) will be different. This can be viewed as a defect&mdash;since the true value \( Z_P \) is basis-independent in this approximation&mdash;or an opportunity, because we can hunt for a choice of basis in which the Laplace approximation is most accurate.
+
+<p>
+
+<!-- ------------------- end of main content --------------- -->
+
+</div>  <!-- end container -->
+<!-- include javascript, jQuery *first* -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+<!-- Bootstrap footer
+<footer>
+<a href="http://..."><img width="250" align=right src="http://..."></a>
+</footer>
+-->
+
+
+<center style="font-size:80%">
+<!-- copyright --> &copy; 2018-2019, Christian Forss&#233;n. Released under CC Attribution-NonCommercial 4.0 license
+</center>
+
+
+</body>
+</html>
+    
+
