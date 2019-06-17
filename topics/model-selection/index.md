@@ -17,3 +17,4 @@ Dick Furnstahl, 2019-06-18
 - TBA
 
 ### Exercises
+* [Bayesian model selection [ipynb]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/model-selection/model-selection_I.ipynb)
