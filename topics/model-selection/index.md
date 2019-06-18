@@ -18,8 +18,8 @@ Dick Furnstahl, 2019-06-18
 - Computational issues for evidence and alternatives
 * [Bayes in the sky: Bayesian inference and model selection in cosmology](https://arxiv.org/abs/0803.4089) by Robert Trotta.
 * [Bayesian model selection revisited [ipynb]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/model-selection/model-selection_I_rjf.ipynb)
-* [Evidence for EFT coefficients [ipynb]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/Evidence_for_model_EFT_coefficients.ipynb)
-* [EFT slides II [pdf]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/EFT_slides_II.pdf)
+* [Evidence for EFT coefficients [ipynb]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/model-selection/NuclearTalent/Bayes2019/blob/master/topics/Evidence_for_model_EFT_coefficients.ipynb)
+* [EFT slides II [pdf]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/model-selection/EFT_slides_II.pdf)
 
 ### Exercises
 * [Bayesian model selection [ipynb]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/model-selection/model-selection_I.ipynb)
