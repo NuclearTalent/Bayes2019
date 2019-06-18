@@ -16,6 +16,9 @@ Upon completion of this course students should be able to:
 - Employ these methods in the context of specific nuclear-physics problems.
 - Be able to understand, appreciate, and criticize the growing literature on Bayesian statistics and machine learning for low-energy nuclear physics applications.
 
+## Preparation
+Please follow the instructions at the [installation page](installation/). 
+
 ## Course contents
 Course material is available at the following public github repository
 [https://github.com/NuclearTalent/Bayes2019](https://github.com/NuclearTalent/Bayes2019)
