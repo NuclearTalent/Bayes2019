@@ -10,7 +10,7 @@ Daniel Phillips, 2019-06-17
 
 ### Lecture 2: 
 Daniel Phillips, 2019-06-18
--Summary of prior choice discussion, Maximum Entropy for reconstructing functions
+- Summary of prior choice discussion, Maximum Entropy for reconstructing functions
 * [Keynote of second lecture [.pdf]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/assigning-probabilities/TALENT_T2b.pdf)
 
 ### Exercises
