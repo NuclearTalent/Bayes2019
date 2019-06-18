@@ -6,11 +6,18 @@ dependencies:
 - numpy
 - scipy
 - matplotlib
-- nbdime
 - pandas
 - seaborn
 - jupyter
+- ipywidgets
+- nbdime
 - emcee
 - corner
+- mkl-service
+- pip
+- pip:
+  - gpy
+  - pymultinest
+  - pymc3
 
 
