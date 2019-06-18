@@ -3,7 +3,8 @@
 ### Lecture 1: 
 Daniel Phillips, 2019-06-17
 - Choosing priors, Maximum Entropy
-* [Keynote of lecture [.pdf]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/assigning-probabilities/TALENT_M2a.pdf)
+* [Keynote of first lecture [.pdf]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/assigning-probabilities/TALENT_M2a.pdf)
+* [Keynote of second lecture [.pdf]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/assigning-probabilities/TALENT_T2b.pdf)
 * [Maximizing the Entropy of Australians [ipynb]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/assigning-probabilities/MaxEnt_Australians.ipynb)
 
 
