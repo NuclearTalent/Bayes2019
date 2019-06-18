@@ -13,6 +13,12 @@ Suppose that you already have a working environment, but that you receive an upd
     conda deactivate
     conda env update -f path/to/environment.yml
     conda activate talent-env
+    
+Test your installation by opening a jupyter notebook, or a python session, and check that you can import the new modules without any error messages. E.g., having added `gpy`, `pymc3`, and `pymultinest`, to your environment you should try
+
+    >>> import gpy
+    >>> import pymc3
+    >>> import pymultinest
 
 
 ### Install multinest
