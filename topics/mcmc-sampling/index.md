@@ -20,7 +20,10 @@ Christian Forss&eacute;n, 2019-06-13
 ### Lecture 3: 
 Dick Furnstahl, 2019-06-20
 
-Further reading on adaptive Monte Carlo integration: Vegas algorithm
+* [HMC visualization I](Richard McElreath)](http://elevanth.org/blog/2017/11/28/build-a-better-markov-chain/)
+* [HMC visualization II](https://arogozhnikov.github.io/2016/12/19/markov_chain_monte_carlo.html)
+
+## Further reading on adaptive Monte Carlo integration: Vegas algorithm
 
 * [A new algorithm for adaptive multidimensional integration](https://www.sciencedirect.com/science/article/pii/0021999178900049?via%3Dihub) by G. Peter Lepage
 * [Lepage's improved/multi-processor Vegas](https://github.com/gplepage/vegas) written in Python with [documention](https://vegas.readthedocs.io/en/latest/)
