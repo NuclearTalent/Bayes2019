@@ -19,5 +19,6 @@ dependencies:
   - gpy
   - pymultinest
   - pymc3
+  - arviz
 
 
