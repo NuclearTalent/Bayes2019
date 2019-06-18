@@ -31,4 +31,11 @@ In order to use `pymultinest`within python you need to have a working version of
     make
     sudo make install
     
-if you have `cmake` and fortran compilers on your system. You can also read the full set of instructions at the PyMultinest [installation guide](http://johannesbuchner.github.io/PyMultiNest/install.html). 
+if you have `cmake` and fortran compilers on your system. In case the import of the module still fails (with an error message about not finding the multinest library file) you can try setting the library path. With the bash shell you can do
+
+    export LD_LIBRARY_PATH="/path/to/lib:$LD_LIBRARY_PATH"
+    
+where `/path/to/lib` is the path to the `lib` directory of your Multinest build that should contain the library file. You might consider putting this command in your `.bashrc` file so that it is done automatically.
+
+
+You can also read the full set of instructions at the PyMultinest [installation guide](http://johannesbuchner.github.io/PyMultiNest/install.html). 
