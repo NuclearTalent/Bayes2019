@@ -21,7 +21,7 @@ Christian Forss&eacute;n, 2019-06-13
 Dick Furnstahl, 2019-06-20
 
 * [HMC visualization I (Richard McElreath)](http://elevanth.org/blog/2017/11/28/build-a-better-markov-chain/)
-* [HMC visualization II](https://arogozhnikov.github.io/2016/12/19/markov_chain_monte_carlo.html)
+* [HMC visualization II (Alex Rogozhnikov)](https://arogozhnikov.github.io/2016/12/19/markov_chain_monte_carlo.html)
 
 #### Further reading on adaptive Monte Carlo integration: Vegas algorithm
 
