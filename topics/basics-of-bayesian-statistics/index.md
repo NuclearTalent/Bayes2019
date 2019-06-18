@@ -10,9 +10,9 @@ Daniel Phillips, 2019-06-10
 * [Medical examples [ipynb]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/basics-of-bayesian-statistics/medical_example_by_Bayes.ipynb) [(key ipynb)](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/basics-of-bayesian-statistics/medical_example_by_Bayes_KEY.ipynb)
 
 
-### Lecture 3: Bayesian updating, Bayesian convergence
+### Lecture 2: Bayesian updating, Bayesian convergence
 Daniel Phillips, 2019-06-11
 * [Lecture [pdf]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/basics-of-bayesian-statistics/TALENT_T1a.pdf)
 
-
 ### Exercises
+* [Error propagation from a Bayesian perspective [ipynb]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/basics-of-bayesian-statistics/Error_Propagation.ipynb)
