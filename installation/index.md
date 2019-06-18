@@ -2,11 +2,13 @@
 
 ### Setup python environment: 
 
-See the [installation instructions](install.md)
+See the [installation instructions](install.md).
 
 ### Update conda python environment 
 
-If we decide to add new python packages to our environment we can simply install them with 'pip' or conda. But in order to reproduce the environment for someone else (including all dependencies), it is better to include them in the 'environment.yml' file. Given an updated environment file you can update your conda environment by the following sequence (where 'path/to/environment.yml' is the path to the directory that contains the environment file, which is the root of your copy of the course github repository)
+New python packages can simply be installed with `pip` or `conda`. However, in order to reproduce the environment for someone else (including all dependencies), it is better to include them in the `environment.yml` file. 
+
+Suppose that you already have a working environment, but that you receive an updated environment file. You can then update your outdated conda environment by the following sequence (where 'path/to/environment.yml' is the path to the directory that contains the environment file, which in our case is the root of your copy of the course github repository)
 
     conda deactivate
     conda env update -f path/to/environment.yml
@@ -15,7 +17,7 @@ If we decide to add new python packages to our environment we can simply install
 
 ### Install multinest
 
-In order to use `pymultinest`within python you need to have a working version of `multinest`installed and the paths to the libraries setup correctly. The following set of commands should wotk
+In order to use `pymultinest`within python you need to have a working version of `multinest`installed and the path to its library setup correctly. The following set of commands should work
 
     git clone https://github.com/JohannesBuchner/MultiNest
     cd MultiNest/build

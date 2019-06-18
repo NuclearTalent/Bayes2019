@@ -1,8 +1,3 @@
-## Material for Nuclear TALENT course in York, UK, June 10-28, 2019
-
-This repository contains the learning material for the Nuclear TALENT course
-Learning from Data: Bayesian Methods and Machine Learning, in York, UK, June 10-28, 2019 
-
 Students are encouraged to install python and the required modules
 before the start of the school. Please contact the lecturers if you
 encounter problems when setting up the environment.
