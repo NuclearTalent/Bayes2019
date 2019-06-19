@@ -25,6 +25,11 @@ Dick Furnstahl, 2019-06-20
 * [Bettencourt, *A conceptual introduction to Hamiltonian Monte Carlo*](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/mcmc-sampling/Refs/Conceptual_introduction_to_Hamiltonian_Monte_Carlo_Betancourt_1701.02434.pdf)
 * [Neal, *MCMC using Hamiltonian dynamics*](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/mcmc-sampling/Refs/MCMC_using_Hamiltonian_dynamics_Neal_1206.1901.pdf)
 * [PyMC3 Docs: Getting started [ipynb]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/mcmc-sampling/PyMC3/PyMC3_docs_getting_started.ipynb)
+* [PyMC3 Docs: Quick start [ipynb]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/mcmc-sampling/PyMC3/PyMC3_docs_api_quickstart.ipynb)
+* [PyMC3 linear regression eample (from Duke course)[ipynb]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/mcmc-sampling/PyMC3/Linear_regression_S15B_PyMC3.ipynb)
+* [PyMC3: Introduction [ipynb]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/mcmc-sampling/PyMC3/PyMC3_intro.ipynb)
+* [PyMC3: Rob Hicks Bayesian 8 [ipynb]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/mcmc-sampling/PyMC3/Rob_Hicks_bayesian_8.ipynb)
+
 
 #### Further reading on adaptive Monte Carlo integration: Vegas algorithm
 
