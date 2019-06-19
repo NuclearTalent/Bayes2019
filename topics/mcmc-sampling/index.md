@@ -27,8 +27,8 @@ Dick Furnstahl, 2019-06-20
 * [PyMC3: Introduction [ipynb]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/mcmc-sampling/PyMC3/PyMC3_intro.ipynb)
 * [PyMC3 Docs: Getting started [ipynb]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/mcmc-sampling/PyMC3/PyMC3_docs_getting_started.ipynb)
 * [PyMC3 Docs: Quick start [ipynb]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/mcmc-sampling/PyMC3/PyMC3_docs_api_quickstart.ipynb)
-* [PyMC3 linear regression eample (from Duke course)[ipynb]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/mcmc-sampling/PyMC3/Linear_regression_S15B_PyMC3.ipynb)
-* [PyMC3: Rob Hicks Bayesian 8 [ipynb]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/mcmc-sampling/PyMC3/Rob_Hicks_bayesian_8.ipynb)
+* [PyMC3 linear regression example (from Duke course)[ipynb]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/mcmc-sampling/PyMC3/Linear_regression_S15B_PyMC3.ipynb)
+* [PyMC3: Rob Hicks Bayesian 8 [ipynb]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/mcmc-sampling/PyMC3/Rob_Hicks_bayesian_8.ipynb) Shows a comparison between Gibbs sampling, PyMC3, and emcee plus an example of using corner with PyMC3 output.
 
 
 #### Further reading on adaptive Monte Carlo integration: Vegas algorithm
