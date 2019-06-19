@@ -24,6 +24,7 @@ Dick Furnstahl, 2019-06-20
 * [HMC visualization II (Alex Rogozhnikov)](https://arogozhnikov.github.io/2016/12/19/markov_chain_monte_carlo.html)
 * [Bettencourt, *A conceptual introduction to Hamiltonian Monte Carlo*](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/mcmc-sampling/Refs/Conceptual_introduction_to_Hamiltonian_Monte_Carlo_Betancourt_1701.02434.pdf)
 * [Neal, *MCMC using Hamiltonian dynamics*](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/mcmc-sampling/Refs/MCMC_using_Hamiltonian_dynamics_Neal_1206.1901.pdf)
+* [PyMC3 Docs: Getting started [ipynb]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/mcmc-sampling/PyMC3/PyMC3_docs_getting_started.ipynb)
 
 #### Further reading on adaptive Monte Carlo integration: Vegas algorithm
 
