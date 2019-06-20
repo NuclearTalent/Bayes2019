@@ -40,6 +40,8 @@ Jupyter notebooks will be used extensively throughout the course. Some notebooks
 ### Mini-projects
 
 - [Mini-project I](mini-projects/)
+- [Mini-project II](mini-projects/)
+
 
 ### Discussion questions
 Questions on Bayesian statistics and its application to nuclear physics problems are collected [in this FAQ page](discussion_questions/). Participants are strongly encouraged to try these questions and propose answers, and also to suggest new questions to be added. 
