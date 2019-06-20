@@ -6,6 +6,7 @@
 
 ### Mini-project 2: How many lines are there?
 
+* [Instructions for mini-project 2 [ipynb]](https://github.com/NuclearTalent/Bayes2019/blob/master/mini-projects/mini-project_II_how_many_lines.ipynb) 
 
 ### Mini-project 3: Application of Bayesian neural network
 
