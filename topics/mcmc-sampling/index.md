@@ -39,6 +39,7 @@ Dick Furnstahl, 2019-06-20
 * [Lepage's improved/multi-processor Vegas](https://github.com/gplepage/vegas) written in Python with [documention](https://vegas.readthedocs.io/en/latest/)
 * [Vegas Revisited: Adaptive Monte Carlo Integration Beyond Factorization](https://arxiv.org/abs/hep-ph/9806432) by Thorsten Ohl
 * [Cuba --a library for multidimensional numerical integration](https://arxiv.org/abs/hep-ph/0404043) by Thomas Hahn
+* [When Random Numbers Are Too Random: Low Discrepancy Sequences](https://blog.demofox.org/2017/05/29/when-random-numbers-are-too-random-low-discrepancy-sequences/)
 
 ### Exercises
 * [MCMC random walk and sampling [ipynb]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/mcmc-sampling/MCMC-random-walk-and-sampling.ipynb)
