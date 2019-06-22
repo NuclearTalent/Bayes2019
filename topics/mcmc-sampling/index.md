@@ -2,7 +2,10 @@
 
 ### Lecture 1: 
 Dick Furnstahl, 2019-06-12
-
+- Why Markov Chain Monte Carlo (MCMC)?
+- Metropolis-Hastings algorithm
+- Visualization of MCMC
+- Poisson distribution example
 * [Scanned lecture notes](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/mcmc-sampling/Lecture_W1a_rjf.pdf)
 * [Visualization of MCMC sampling (Richard McElreath)](http://elevanth.org/blog/2017/11/28/build-a-better-markov-chain/)
 * [Metropolis Poisson example [ipynb]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/mcmc-sampling/Metropolis_Poisson_example.ipynb)
@@ -19,7 +22,10 @@ Christian Forss&eacute;n, 2019-06-13
 
 ### Lecture 3: 
 Dick Furnstahl, 2019-06-20
-
+- Visualization of Hamiltonian Monte Carlo (HMC) and the No-U-Turn Sampler (NUTS)
+- Physics of HMC
+- PyMC3 overview
+* [Scanned lecture notes](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/mcmc-sampling/Lecture_W2a_rjf.pdf)
 * [HMC visualization I (Richard McElreath)](http://elevanth.org/blog/2017/11/28/build-a-better-markov-chain/)
 * [HMC visualization II (Alex Rogozhnikov)](https://arogozhnikov.github.io/2016/12/19/markov_chain_monte_carlo.html)
 * [Bettencourt, *A conceptual introduction to Hamiltonian Monte Carlo*](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/mcmc-sampling/Refs/Conceptual_introduction_to_Hamiltonian_Monte_Carlo_Betancourt_1701.02434.pdf)
