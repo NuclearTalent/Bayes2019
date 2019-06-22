@@ -1,8 +1,8 @@
 ## Model checking
 
 ### Lecture 1: 
-Dick Furnstahl, 2019-06-24
-- Model calibration
+Daniel Phillips, 2019-06-24
+- Empirical coverage probability
 - TBA
 
 ### Lecture 2: 
