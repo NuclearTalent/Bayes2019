@@ -2,7 +2,8 @@
 
 ### Lecture 1: 
 Dick Furnstahl, 2019-06-10
-
+- Overview of parameter estimation, frequentist vs. bayesian
+- Examples: parameters of Gaussian noise, fitting a straight line
 * [Scanned lecture notes](Lecture_M1b_rjf.pdf)
 
 * [Intro notebook revisited [ipynb]](parameter_estimation_in_bayesTALENT_intro.ipynb)
@@ -12,7 +13,9 @@ Dick Furnstahl, 2019-06-10
 
 ### Lecture 2: 
 Dick Furnstahl, 2019-06-11
-
+- Central limit theorem
+- Correlations and the likelihood / posterior
+- Amplitude of a signal in the presence of background
 * [Scanned lecture notes](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/bayesian-parameter-estimation/Lecture_T1b_rjf.pdf)
 
 * [Exploring pdfs [ipynb]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/basics-of-bayesian-statistics/Exploring_pdfs.ipynb)
@@ -22,7 +25,9 @@ Dick Furnstahl, 2019-06-11
 
 ### Lecture 3: 
 Dick Furnstahl, 2019-06-13
-
+- Recap of signal + background
+- Error probagation for multivariate Gaussians 
+- Maximum likelihood in linear algebra form
 * [Scanned lecture notes](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/bayesian-parameter-estimation/Lecture_Th1a_rjf.pdf)
 
 * [Signal and background recap [ipynb]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/bayesian-parameter-estimation/amplitude_in_presence_of_background_RECAP.ipynb)
