@@ -34,4 +34,15 @@ Dick Furnstahl, 2019-06-13
 
 * [Data analysis recipes: Fitting a model to data](https://arxiv.org/abs/1008.4686) --- article from Hogg, Bovy, and Lang about real-world fitting (many interesting annotations!).
 
+
+### Lecture 4: 
+Dick Furnstahl, 2019-06-25
+- Sloppy models
+- SVD and PCA
+
+* [A Singularly Valuable Decomposition: The SVD of a Matrix (Kalman) [pdf]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/bayesian-parameter-estimation/SVD-Dan-Kalman.pdf)
+
+
+
+
 ### Exercises
