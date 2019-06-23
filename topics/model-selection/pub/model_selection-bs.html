@@ -132,7 +132,7 @@ MathJax.Hub.Config({
 <center><h4>Jun 23, 2019</h4></center> <!-- date -->
 <br>
 <p>
-So far, we have been concerned with the problem of parameter estimation. In studying the linear relationship between two quantities, for example, we discussed how to infer the slope and the offset of the associated straight-line model. Often, however, there is a question as to whether a quadratic, or even cubic, function might be more a more appropriate model. In this lecture, we will consider the broad class of scientific problems when there is uncertainty as to which one of a set of alternative models is most suitable. In the Bayesian terminology these can be labeled as <b>Model Selection</b> problems and we will discuss them in some depth.
+So far, we have been concerned with the problem of parameter estimation. In studying the linear relationship between two quantities, for example, we discussed how to infer the slope and the offset of the associated straight-line model. Often, however, there is a question as to whether a quadratic, or even cubic, function might be a more appropriate model. In this lecture, we will consider the broad class of scientific problems when there is uncertainty as to which one of a set of alternative models is most suitable. In the Bayesian terminology these can be labeled as <b>Model Selection</b> problems and we will discuss them in some depth.
 
 <p>
 <center>  <!-- FIGURE -->
@@ -145,23 +145,16 @@ So far, we have been concerned with the problem of parameter estimation. In stud
 </div> <!-- end jumbotron -->
 
 <h1 id="___sec0" class="anchor">Model selection example: Based on a true story </h1>
-<!-- !split  -->
-
-<p>
-<blockquote>
-    <em>Dr. A has a theory; Prof. B also has a theory, but with an adjustable parameter \( \lambda \). Whose theory should we prefer on the basis of data \( D \)?</em>&mdash; Jefferys (1939), Gull (1988), Sivia (2006)
-</blockquote>
-
-
-<p>
 <!-- !split -->
 <!-- ======= The Story of Dr. A and Prof. B  <div id="___sec1"></div>======= -->
 
 <h1>The Story of Dr. A and Prof. B</h1>
 [Reproduced, with some modifications, from Sivia, 2006].
+<blockquote>
+    <em>Dr. A has a theory; Prof. B also has a theory, but with an adjustable parameter \( \lambda \). Whose theory should we prefer on the basis of data \( D \)?</em>&mdash; Jefferys (1939), Gull (1988), Sivia (2006)
+</blockquote>
 
-<p>
-it is clear that we need to evaluate the posterior probabilities for A and B being correct to ascertain the relative merit of the two theories. If the ratio of the posterior probabilities,
+It is clear that we need to evaluate the posterior probabilities for A and B being correct to ascertain the relative merit of the two theories. If the ratio of the posterior probabilities,
 $$
 \begin{equation}
 \text{posterior ratio} = \frac{p(A |D, I )}{p(B|D,I)}
@@ -257,7 +250,7 @@ In most cases, our relative preference for A or B is dominated by the goodness o
 \( \delta\lambda \gg \lambda_\mathrm{max}-\lambda_\mathrm{min} \) and \( p(D|\lambda_0,B,I) \approx p(D|A,I) \).
 
 <h2 id="___sec2" class="anchor">One adjustable parameter each </h2>
-Some further interesting features arise when we consider the case where Dr A also has one adjustable parameter; call it \( \mu \). If we make the same sort of probability assign- ments, and simplifying approximations, as for Prof B, then we find that
+Some further interesting features arise when we consider the case where Dr A also has one adjustable parameter; call it \( \mu \). If we make the same sort of probability assignments, and simplifying approximations, as for Prof B, then we find that
 $$
 \begin{equation}
 \frac{p(A|D,I)}{p(B|D,I)} =  \frac{p(A|I)}{p(B|I)} \times \frac{p(D|\mu_0,A,I)}{p(D|\lambda_0,B,I)} \times \frac{\delta\mu(\lambda_\mathrm{max} - \lambda_\mathrm{min})}{\delta\lambda(\mu_\mathrm{max} - \mu_\mathrm{min})}. 
@@ -265,7 +258,7 @@ $$
 \end{equation}
 $$
 
-This could represent the situation where we have to choose between a Gaussian and Lorentzian shape for a signal peak, but one associated parameter is not known. The position of the maximum may be fixed at the origin by theory, for example, and the amplitude constrained by the normalization of the data; A and B could then be the hypotheses favouring the alternative lineshapes, where \( \mu \) and \( \lambda \) are their related full- width-half-maxima. If we give equal weight to A and B before the analysis, and assign a similar large prior range for both \( \mu \) and \( \lambda \), then Eq. \eqref{eq:sivia_49} reduces to
+This could represent the situation where we have to choose between a Gaussian and Lorentzian shape for a signal peak, but one associated parameter is not known. The position of the maximum may be fixed at the origin by theory, for example, and the amplitude constrained by the normalization of the data; A and B could then be the hypotheses favouring the alternative lineshapes, where \( \delta\mu \) and \( \delta\lambda \) are their related full-width-half-maxima. If we give equal weight to A and B before the analysis, and assign a similar large prior range for both \( \mu \) and \( \lambda \), then Eq. \eqref{eq:sivia_49} reduces to
 $$
 \frac{p(A|D,I)}{p(B|D,I)} \approx  \frac{p(D|\mu_0,A,I)}{p(D|\lambda_0,B,I)} \times \frac{\delta\mu}{\delta\lambda}. 
 $$
