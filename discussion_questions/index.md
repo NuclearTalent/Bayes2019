@@ -102,6 +102,8 @@ Here we collect questions on Bayesian statistics and its application to nuclear 
 
 1. What method should I use for calculating the evidence or odds ratios? 
 
+1. How does "PyMultiNest" compute evidences internally?
+
 <p>[Return to <a href="#Categories">Categories</a>]</p>
 
 ## <a name="Checking">Model checking</a>
