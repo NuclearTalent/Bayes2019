@@ -129,10 +129,10 @@ MathJax.Hub.Config({
 <center><b>Department of Physics, Chalmers University of Technology, Sweden</b></center>
 <br>
 <p>
-<center><h4>Jun 16, 2019</h4></center> <!-- date -->
+<center><h4>Jun 23, 2019</h4></center> <!-- date -->
 <br>
 <p>
-So far, we have been concerned with the problem of parameter estimation. In studying the linear relationship between two quantities, for example, we discussed how to infer the slope and the offset of the associated straight-line model. Often, however, there is a question as to whether a quadratic, or even cubic, function might be more a more appropriate model. In this lecture, we will consider the broad class of scientific problems when there is uncertainty as to which one of a set of alternative models is most suitable. In the Bayesian terminology these can be labeled as <b>Model Selection</b> problems and we will discuss them in some depth.
+So far, we have been concerned with the problem of parameter estimation. In studying the linear relationship between two quantities, for example, we discussed how to infer the slope and the offset of the associated straight-line model. Often, however, there is a question as to whether a quadratic, or even cubic, function might be a more appropriate model. In this lecture, we will consider the broad class of scientific problems when there is uncertainty as to which one of a set of alternative models is most suitable. In the Bayesian terminology these can be labeled as <b>Model Selection</b> problems and we will discuss them in some depth.
 
 <p>
 <center>  <!-- FIGURE -->
@@ -145,23 +145,16 @@ So far, we have been concerned with the problem of parameter estimation. In stud
 </div> <!-- end jumbotron -->
 
 <h1 id="___sec0" class="anchor">Model selection example: Based on a true story </h1>
-<!-- !split  -->
-
-<p>
-<blockquote>
-    <em>Dr. A has a theory; Prof. B also has a theory, but with an adjustable parameter \( \lambda \). Whose theory should we prefer on the basis of data \( D \)?</em>&mdash; Jefferys (1939), Gull (1988), Sivia (2006)
-</blockquote>
-
-
-<p>
 <!-- !split -->
 <!-- ======= The Story of Dr. A and Prof. B  <div id="___sec1"></div>======= -->
 
 <h1>The Story of Dr. A and Prof. B</h1>
 [Reproduced, with some modifications, from Sivia, 2006].
+<blockquote>
+    <em>Dr. A has a theory; Prof. B also has a theory, but with an adjustable parameter \( \lambda \). Whose theory should we prefer on the basis of data \( D \)?</em>&mdash; Jefferys (1939), Gull (1988), Sivia (2006)
+</blockquote>
 
-<p>
-it is clear that we need to evaluate the posterior probabilities for A and B being correct to ascertain the relative merit of the two theories. If the ratio of the posterior probabilities,
+It is clear that we need to evaluate the posterior probabilities for A and B being correct to ascertain the relative merit of the two theories. If the ratio of the posterior probabilities,
 $$
 \begin{equation}
 \text{posterior ratio} = \frac{p(A |D, I )}{p(B|D,I)}
@@ -211,7 +204,7 @@ p(D|\lambda,B,I) = p(D|\lambda_0,B,I) \exp \left[ − \frac{(\lambda−\lambda_0
 \end{equation}
 $$
 
-The assignments of the prior \eqref{eq:sivia_44} and the likelihood \eqref{eq:sivia_45} are illustrated in Fig. <a href="#fig:sivia_41">2</a>. We may note that, unlike the prior pdf \( p(\lambda|B,I) \), B&#8217;s likelihood function need not be normalized with respect to \( \lambda \); in other words, \( p(D|\lambda_0,B,I) \) need not equal \( 1/ \delta\lambda 2\pi \) . This is because the \( \lambda \) in \( p(D|\lambda,B,I) \) appears in the conditioning statement, whereas the normalization requirement applies to quantities to the left of the &#8216;|&#8217; symbol.
+The assignments of the prior \eqref{eq:sivia_44} and the likelihood \eqref{eq:sivia_45} are illustrated in Fig. <a href="#fig:sivia_41">2</a>. We may note that, unlike the prior pdf \( p(\lambda|B,I) \), B&#8217;s likelihood function need not be normalized with respect to \( \lambda \); in other words, \( p(D|\lambda_0,B,I) \) need not equal \( 1/ \delta\lambda \sqrt{2\pi} \) . This is because the \( \lambda \) in \( p(D|\lambda,B,I) \) appears in the conditioning statement, whereas the normalization requirement applies to quantities to the left of the &#8216;|&#8217; symbol.
 
 <p>
 <center> <!-- figure label: --> <div id="fig:sivia_41"></div> <!-- FIGURE -->
@@ -232,14 +225,14 @@ $$
 
 having set the limits according to the specified range. Assuming that the sharp cut-offs
 do not cause a significant truncation of the Gaussian pdf of the likelihood,
-its integral will be equal to \( \delta\lambda (2\pi) \) times \( p(D|\lambda_0,B,I) \). The troublesome term then reduces to
+its integral will be equal to \( \delta\lambda \sqrt{2\pi} \) times \( p(D|\lambda_0,B,I) \). The troublesome term then reduces to
 $$
-p(D|B,I) = \frac{1}{\lambda_\mathrm{max} - \lambda_\mathrm{min}} p(D|\lambda_0,B,I) \delta\lambda 2\pi.
+p(D|B,I) = \frac{1}{\lambda_\mathrm{max} - \lambda_\mathrm{min}} p(D|\lambda_0,B,I) \delta\lambda \sqrt{2\pi}.
 $$
 Substituting this into Eq. \eqref{eq:sivia_42}, we finally see that the ratio of the posteriors required to answer our original question decomposes into the product of three terms:
 $$
 \begin{equation}
-\frac{p(A|D,I)}{p(B|D,I)} =  \frac{p(A|I)}{p(B|I)} \times \frac{p(D|A,I)}{p(D|\lambda_0,B,I)} \times \frac{\lambda_\mathrm{max} - \lambda_\mathrm{min}}{\delta\lambda (2\pi)}. 
+\frac{p(A|D,I)}{p(B|D,I)} =  \frac{p(A|I)}{p(B|I)} \times \frac{p(D|A,I)}{p(D|\lambda_0,B,I)} \times \frac{\lambda_\mathrm{max} - \lambda_\mathrm{min}}{\delta\lambda \sqrt{2\pi}}. 
 \label{eq:sivia_48}
 \end{equation}
 $$
@@ -253,11 +246,11 @@ Although it is satisfying to quantify the everyday guiding principle attributed 
 While accepting the clear logic leading to Eq \eqref{eq:sivia_48}, many people rightly worry about the question of the limits \( \lambda_\mathrm{min} \) and \( \lambda_\mathrm{max} \). Jeffreys (1939) himself was concerned and pointed out that there would be an infinite penalty for any new parameter if the range was allowed to go to \( \pm\infty \). Stated in the abstract, this would appear to be a severe limitation. In practice, however, it is not generally such a problem: since the analysis is always used in specific contexts, a suitable choice can usually be made on the basis of the relevant background information. Even in uncharted territory, a small amount of thought soon reveals that our state of ignorance is always far from the \( \pm\infty \) scenario. If \( \lambda \) was the coupling constant (or strength) for a possible fifth force, for example, then we could put an upper bound on its magnitude because everybody would have noticed it by now if it had been large enough! We should also not lose sight of the fact that the precise form of Eq \eqref{eq:sivia_48} stems from our stated simplifying approximations; if these are not appropriate, then eqns \eqref{eq:sivia_42} and \eqref{eq:sivia_43} will lead us to a somewhat different formula.
 
 <p>
-In most cases, our relative preference for A or B is dominated by the goodness of the fit to the data; that is to say, the maximum likelihood ratio in eqn \eqref{eq:sivia_48} tends to overwhelm the contributions of the other two terms. The Ockham factor can play a crucial role, however, when both theories give comparably good agreement with the measurements. Indeed, it becomes increasingly important if B&#8217;s theory fails to give a significantly better fit as the quality of the data improves. In that case, \( \delta\lambda \) continues to become smaller but the ratio of best-fit likelihoods remains close to unity; according to Eq. \eqref{eq:sivia_48}, therefore, A&#8217;s theory is favoured ever more strongly. By the same token, the Ockham effect disappears if the data are either few in number, of poor quality or just fail to shed new light on the problem at hand. This is simply because the posterior ratio of Eq. \eqref{eq:sivia_48} is then roughly equal to the complementary prior one, since the empirical evidence is very weak; hence, there is no inherent preference for A&#8217;s theory unless it is explicitly encoded in \( p(A|I)/prob(B|I) \). This property can be verified formally by going back to Eqs. \eqref{eq:sivia_42}, \eqref{eq:sivia_45} and \eqref{eq:sivia_46}, and considering the poor-data limit in which 
+In most cases, our relative preference for A or B is dominated by the goodness of the fit to the data; that is to say, the maximum likelihood ratio in eqn \eqref{eq:sivia_48} tends to overwhelm the contributions of the other two terms. The Ockham factor can play a crucial role, however, when both theories give comparably good agreement with the measurements. Indeed, it becomes increasingly important if B&#8217;s theory fails to give a significantly better fit as the quality of the data improves. In that case, \( \delta\lambda \) continues to become smaller but the ratio of best-fit likelihoods remains close to unity; according to Eq. \eqref{eq:sivia_48}, therefore, A&#8217;s theory is favoured ever more strongly. By the same token, the Ockham effect disappears if the data are either few in number, of poor quality or just fail to shed new light on the problem at hand. This is simply because the posterior ratio of Eq. \eqref{eq:sivia_48} is then roughly equal to the complementary prior one, since the empirical evidence is very weak; hence, there is no inherent preference for A&#8217;s theory unless it is explicitly encoded in \( p(A|I)/p(B|I) \). This property can be verified formally by going back to Eqs. \eqref{eq:sivia_42}, \eqref{eq:sivia_45} and \eqref{eq:sivia_46}, and considering the poor-data limit in which 
 \( \delta\lambda \gg \lambda_\mathrm{max}-\lambda_\mathrm{min} \) and \( p(D|\lambda_0,B,I) \approx p(D|A,I) \).
 
 <h2 id="___sec2" class="anchor">One adjustable parameter each </h2>
-Some further interesting features arise when we consider the case where Dr A also has one adjustable parameter; call it \( \mu \). If we make the same sort of probability assign- ments, and simplifying approximations, as for Prof B, then we find that
+Some further interesting features arise when we consider the case where Dr A also has one adjustable parameter; call it \( \mu \). If we make the same sort of probability assignments, and simplifying approximations, as for Prof B, then we find that
 $$
 \begin{equation}
 \frac{p(A|D,I)}{p(B|D,I)} =  \frac{p(A|I)}{p(B|I)} \times \frac{p(D|\mu_0,A,I)}{p(D|\lambda_0,B,I)} \times \frac{\delta\mu(\lambda_\mathrm{max} - \lambda_\mathrm{min})}{\delta\lambda(\mu_\mathrm{max} - \mu_\mathrm{min})}. 
@@ -265,7 +258,7 @@ $$
 \end{equation}
 $$
 
-This could represent the situation where we have to choose between a Gaussian and Lorentzian shape for a signal peak, but one associated parameter is not known. The position of the maximum may be fixed at the origin by theory, for example, and the amplitude constrained by the normalization of the data; A and B could then be the hypotheses favouring the alternative lineshapes, where \( \mu \) and \( \lambda \) are their related full- width-half-maxima. If we give equal weight to A and B before the analysis, and assign a similar large prior range for both \( \mu \) and \( \lambda \), then Eq. \eqref{eq:sivia_49} reduces to
+This could represent the situation where we have to choose between a Gaussian and Lorentzian shape for a signal peak, but one associated parameter is not known. The position of the maximum may be fixed at the origin by theory, for example, and the amplitude constrained by the normalization of the data; A and B could then be the hypotheses favouring the alternative lineshapes, where \( \delta\mu \) and \( \delta\lambda \) are their related full-width-half-maxima. If we give equal weight to A and B before the analysis, and assign a similar large prior range for both \( \mu \) and \( \lambda \), then Eq. \eqref{eq:sivia_49} reduces to
 $$
 \frac{p(A|D,I)}{p(B|D,I)} \approx  \frac{p(D|\mu_0,A,I)}{p(D|\lambda_0,B,I)} \times \frac{\delta\mu}{\delta\lambda}. 
 $$
@@ -327,6 +320,13 @@ $$
 Z_P \approx Z_Q = P^*(\theta_0) \sqrt{\frac{(2\pi)^K}{\det\Sigma^{-1}}}.
 $$
 Predictions can then be made using this approximation \( Q \). Physicists also call this widely-used approximation the saddle-point approximation.
+
+<p>
+Note, in particular, that if we consider a chi-squared pdf: \( P^*(\theta) = \exp \left( -\frac{1}{2} \chi^2(\theta)\right) \), then we get
+$$
+Z_P \approx \exp \left( -\frac{1}{2} \chi^2(\theta_0)\right) \sqrt{\frac{(4\pi)^K}{\det\Sigma^{-1}}},
+$$
+where there is a factor \( 2^{K/2} \) that comes from the extra factor \( 1/2 \) multiplying the covariance matrix \( \Sigma^{-1} \) and therefore appearing in all \( K \) eigenvalues.
 
 <p>
 The fact that the normalizing constant of a Gaussian is given by 

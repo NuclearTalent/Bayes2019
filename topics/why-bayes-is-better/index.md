@@ -13,6 +13,7 @@ Christian Forss&eacute;n, 2019-06-12
 Christian Forss&eacute;n, 2019-06-14
 - Error propagation
 - Dealing with outliers
+* [Scanned lecture notes [pdf]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/why-bayes-is-better/Lecture_F1a_cf.pdf)
 * [Why Bayes is Better II [ipynb]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/why-bayes-is-better/why_bayes_is_better_II.ipynb)
 
 ### Lecture 3: 
