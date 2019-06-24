@@ -1,0 +1,19 @@
+name: talent-env-ml2
+channels:
+- conda-forge
+dependencies:
+- python=3.6
+- numpy
+- scipy
+- matplotlib
+- pandas
+- seaborn
+- jupyter
+- nbdime
+- scikit-learn
+- pip
+- pip:
+  - https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.6.0-py3-none-any.whl
+  - edward
+  - keras
+
