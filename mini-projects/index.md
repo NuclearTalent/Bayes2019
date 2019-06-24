@@ -15,3 +15,4 @@
 
 ### Mini-project 3: Bayesian optimization and Bayesian neural networks
 
+* [Instructions for mini-project 3a (Bayesian optimization) [ipynb]](https://github.com/NuclearTalent/Bayes2019/blob/master/mini-projects/mini-project_IIIa_bayesian_optimization.ipynb) 
