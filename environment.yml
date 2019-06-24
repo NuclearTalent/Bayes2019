@@ -14,9 +14,13 @@ dependencies:
 - emcee
 - corner
 - mkl-service
+- jupyter_nbextensions_configurator
+- scikit-learn
+- scikit-image
 - pip
 - pip:
   - gpy
+  - gpyopt  
   - pymultinest
   - pymc3
   - arviz
