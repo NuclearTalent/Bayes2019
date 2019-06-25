@@ -6,7 +6,7 @@ Christian Forss&eacute;n, 2019-06-19
 - From parametric models to Gaussian processes
 - Covariance functions
 * [Scanned lecture notes [pdf]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/gaussian-processes/Lecture_W2b_cf.pdf)
-* [Gaussian processes - Part I [ipynb](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/gaussian-processes/GP-I.ipynb)
+* Gaussian processes - Part I [ipynb](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/gaussian-processes/GP-I.ipynb)
 
 ### Lecture 2: 
 Christian Forss&eacute;n, 2019-06-20
@@ -16,4 +16,4 @@ Christian Forss&eacute;n, 2019-06-20
 * [A Bayesian Approach for Parameter Estimation and Prediction using a Computationally Intensive Model](https://arxiv.org/abs/1407.3017) by D. Higdon et al.
 
 ### Exercises
-* [Gaussian processes - Exercise [ipynb](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/gaussian-processes/GP_exercise.ipynb)
+* Gaussian processes - Exercise [ipynb](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/gaussian-processes/GP_exercise.ipynb)
