@@ -39,9 +39,7 @@ Jupyter notebooks will be used extensively throughout the course. Some notebooks
 
 ### Mini-projects
 
-- [Mini-project I](mini-projects/)
-- [Mini-project II](mini-projects/)
-- [Mini-project III](mini-projects/)
+Go to the [mini-projects](mini-projects/).
 
 
 ### Discussion questions
