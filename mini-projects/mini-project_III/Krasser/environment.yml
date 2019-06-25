@@ -1,0 +1,19 @@
+name: talent-env-ml3
+channels:
+- conda-forge
+dependencies:
+- python=3.7
+- numpy
+- scipy
+- matplotlib
+- pandas
+- seaborn
+- jupyter
+- nbdime
+- scikit-learn
+- pip
+- pip:
+  - tensorflow
+  - keras
+  - tqdm
+
