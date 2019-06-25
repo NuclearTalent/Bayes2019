@@ -39,7 +39,7 @@ Dick Furnstahl, 2019-06-13
 Dick Furnstahl, 2019-06-25
 - Sloppy models
 - SVD and PCA
-
+* [Lecture material and afternoon exercises [ipynb]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/bayesian-parameter-estimation/linear_algebra_games_I.ipynb)
 * [A Singularly Valuable Decomposition: The SVD of a Matrix (Kalman) [pdf]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/bayesian-parameter-estimation/SVD-Dan-Kalman.pdf)
 
 
