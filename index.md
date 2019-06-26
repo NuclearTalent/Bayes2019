@@ -35,6 +35,11 @@ The following topics will be covered:
 - [Model checking](topics/model-checking/)
 - [Special topic: Bayesian methods and machine learning](topics/bayesian-methods-and-machine-learning/)
 
+Schedule of the lecture weeks:
+* [Week 1](topics/schedule_week1.md)  
+* [Week 2](topics/schedule_week2.md)  
+* [Week 3](topics/schedule_week3.md)
+
 Jupyter notebooks will be used extensively throughout the course. Some notebooks introducing notebooks can be found [here](topics/jupyter-and-python-basics/).
 
 ### Mini-projects
