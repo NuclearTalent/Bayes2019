@@ -19,12 +19,12 @@ Christian Forss&eacute;n, 2019-06-14
 ### Lecture 3: 
 Daniel Phillips, 2019-06-21
 - Systematic errors: offset, normalization uncertainty, other experimental systematics, theory systematic from an EFT
-* [Lecture on systematic errors [pdf]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/why-bayes-is-better/Talent_F2a.pdf)
+* [Lecture on systematic errors [pdf]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/why-bayes-is-better/TALENT_F2a.pdf)
 
 ### Lecture 4: 
 Daniel Phillips, 2019-06-26
 - Experimental design
-* [Lecture on experimental design [pdf]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/why-bayes-is-better/Talent_W3b.pdf)
+* [Lecture on experimental design [pdf]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/why-bayes-is-better/TALENT_W3b.pdf)
 * [Notebook reprising signal plus background example [ipynb]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/why-bayes-is-better/experimental-design.ipynb)
 
 ### Exercises
