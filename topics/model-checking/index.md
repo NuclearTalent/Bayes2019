@@ -16,9 +16,7 @@ Daniel Phillips, 2019-06-25
 
 ### Exercises
 - Correlated EFT truncation errors: the code behind the manuscript
-[Instructions to run the notebook [ipynb]]
-(https://github.com/NuclearTalent/Bayes2019/blob/master/topics/model-checking/running_gsum_notebook_for_figures.ipynb)
+[Instructions to run the notebook [ipynb]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/model-checking/running_gsum_notebook_for_figures.ipynb)
 
-[Notebook for GP model of EFT truncation errors [ipynb]]
-(https://github.com/NuclearTalent/Bayes2019/blob/master/topics/model-checking/correlated_EFT_publication_with_commentary.ipynb)
+[Notebook for GP model of EFT truncation errors [ipynb]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/model-checking/correlated_EFT_publication_with_commentary.ipynb)
 
