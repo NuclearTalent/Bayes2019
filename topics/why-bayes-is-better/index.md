@@ -24,5 +24,9 @@ Daniel Phillips, 2019-06-21
 ### Lecture 4: 
 Daniel Phillips, 2019-06-26
 - Experimental design
+* [Lecture on experimental design [pdf]]
+(https://github.com/NuclearTalent/Bayes2019/blob/master/topics/why-bayes-is-better/Talent_W3b.pdf)
+* [Notebook reprising signal plus background example [pdf]]
+(https://github.com/NuclearTalent/Bayes2019/blob/master/topics/why-bayes-is-better/experimental-design.ipynb)
 
 ### Exercises
