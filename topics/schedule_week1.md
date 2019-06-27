@@ -27,12 +27,23 @@ This directory contains notebooks introducing the basics of python programming a
 * [Jupyter and Python intro 02 [ipynb]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/jupyter-and-python-basics/TALENT_Jupyter_Python_intro_02.ipynb)
 
 ### Introduction to git (John Bower, Christian Drischler)
+
+#### Initial configuration
+
+    git config --global user.name "Oski Bear"
+    git config --global user.email obear@example.com
+    
+Use here your `name` as well as your `email`.
+
+####  Discussed commands relevant for this course
+
 * `git status`
 * `git branch`
 * `git merge`
 * `git log`
-* `git checkout`
+* `git checkout [-b]`
 * `git pull`
+* `git clone`
 * `git commit`
 * `git reset [--hard]`
 * ...
