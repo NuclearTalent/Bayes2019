@@ -28,5 +28,6 @@ Daniel Phillips, 2019-06-26
 - Experimental design
 * [Lecture on experimental design [pdf]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/why-bayes-is-better/TALENT_W3b.pdf)
 * [Notebook reprising signal plus background example [ipynb]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/why-bayes-is-better/experimental-design.ipynb)
+* [Using Bayesian approaches to design new, expensive experiments: Ian Vernon [pdf]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/why-bayes-is-better/VernonPresentationISNET6.ipynb)
 
 ### Exercises
