@@ -67,7 +67,12 @@ Questions on Bayesian statistics and its application to nuclear physics problems
 This [TALENT](https://fribtheoryalliance.org/TALENT/) school is made possible with generous funding from the Science and Technology Facilities Council [STFC](https://stfc.ukri.org/) in the UK.
 
 ## Daily schedule
-There are two lectures every morning. Each lecture is approximately 2x40 min with a small break in the middle. There is a longer coffee break between the two morning lectures. The afternoons will be devoted to exercise sessions in the computer lab with extra support from the two facilitators. Students will work on a mix of discussion questions, computer exercises and mini projects. Every day ends with a wrap-up discussion session.
+There are two lectures every morning. Each lecture is approximately 2x40 min with a small break in the middle. 
+There is a longer coffee break between the two morning lectures. 
+The afternoons will be devoted to exercise sessions in the computer lab with extra support from the two facilitators. 
+Students will work on a mix of discussion questions, computer exercises and mini projects. 
+Every day ends with a wrap-up discussion session.
+We also will have a poster session with discussion at the end of the second week.
 
 The organization of a typical course day is as follows:
 

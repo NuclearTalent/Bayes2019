@@ -98,5 +98,8 @@
 * [Lecture on systematic errors [pdf]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/why-bayes-is-better/TALENT_F2a.pdf)
 
 
+### Poster session (all participants)
+
+
 
 
