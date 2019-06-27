@@ -10,8 +10,7 @@
 
 * [Brief overview of nested sampling [pdf]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/mcmc-sampling/Refs/nested_sampling_background.pdf) 
 
-* [Feroz thesis [pdf]]
-(https://github.com/NuclearTalent/Bayes2019/blob/master/topics/mcmc-sampling/Refs/nested_sampling_background.pdf) Chapter 2 has an accessible decription of Nested Sampling and Chapter 3 details MultiNest. 
+* [Feroz thesis [pdf]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/mcmc-sampling/Refs/nested_sampling_background.pdf) Chapter 2 has an accessible decription of Nested Sampling and Chapter 3 details MultiNest. 
 
 ### Mini-project 3: Bayesian optimization and Bayesian neural networks
 
