@@ -54,7 +54,7 @@ This directory contains notebooks introducing the basics of python programming a
 
 ## Wednesday, June 12
 
-### Lecture 1: MCMC sampling (Dick Furnstahl)
+### MCMC sampling (Dick Furnstahl)
 - Why Markov Chain Monte Carlo (MCMC)?
 - Metropolis-Hastings algorithm
 - Visualization of MCMC
@@ -64,7 +64,7 @@ This directory contains notebooks introducing the basics of python programming a
 * [Metropolis Poisson example [ipynb]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/mcmc-sampling/Metropolis_Poisson_example.ipynb)
 
 
-### Lecture 1: Why Bayes is Better (1) (Christian Forss&eacute;n)
+### Why Bayes is Better (1) (Christian Forss&eacute;n)
 - Prior information
 - Marginalization
 * [Scanned lecture notes [pdf]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/why-bayes-is-better/Lecture_W1b_cf.pdf)
@@ -77,7 +77,7 @@ This directory contains notebooks introducing the basics of python programming a
 
 ## Thursday, June 13
 
-### Lecture 3: Bayesian Parameter Estimation (Dick Furnstahl)
+### Bayesian Parameter Estimation (Dick Furnstahl)
 - Recap of signal + background
 - Error probagation for multivariate Gaussians 
 - Maximum likelihood in linear algebra form
@@ -85,7 +85,7 @@ This directory contains notebooks introducing the basics of python programming a
 * [Signal and background recap [ipynb]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/bayesian-parameter-estimation/amplitude_in_presence_of_background_RECAP.ipynb)
 * [Data analysis recipes: Fitting a model to data](https://arxiv.org/abs/1008.4686) --- article from Hogg, Bovy, and Lang about real-world fitting (many interesting annotations!).
 
-### Lecture 2: MCMC sampling (Christian Forss&eacute;n)
+### MCMC sampling (Christian Forss&eacute;n)
 - Assessing convergence of MCMC simulations
 - Multimodal distributions and parallel tempering
 * [Scanned lecture notes](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/mcmc-sampling/Lecture_Th1b_cf.pdf)

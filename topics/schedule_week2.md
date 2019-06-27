@@ -4,8 +4,8 @@
 
 ### Assigning probabilities (Daniel Phillips)
 * Choosing priors, Maximum Entropy
-* [Keynote of first lecture [.pdf]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/assigning-probabilities/TALENT_M2a.pdf)
-* [Maximizing the Entropy of Australians [ipynb]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/assigning-probabilities/MaxEnt_Australians.ipynb)
+- [Keynote of first lecture [.pdf]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/assigning-probabilities/TALENT_M2a.pdf)
+- [Maximizing the Entropy of Australians [ipynb]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/assigning-probabilities/MaxEnt_Australians.ipynb)
 
 
 ### Model selection (Christian Forss&eacute;n)
