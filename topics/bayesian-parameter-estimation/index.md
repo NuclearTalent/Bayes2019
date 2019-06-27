@@ -4,7 +4,7 @@
 
 ### Lecture 1: 
 Dick Furnstahl, 2019-06-10
-- Overview of parameter estimation, frequentist vs. bayesian
+- Overview of parameter estimation, frequentist vs. Bayesian
 - Examples: parameters of Gaussian noise, fitting a straight line
 * [Scanned lecture notes](Lecture_M1b_rjf.pdf)
 
