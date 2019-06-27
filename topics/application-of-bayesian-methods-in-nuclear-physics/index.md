@@ -14,4 +14,8 @@ Dick Furnstahl, 2019-06-14
 ### Lecture 2: 
 Dick Furnstahl, 2019-06-21
 
+### Lecture 3: 
+Daniel Phillips, 2019-06-27
+* [Lecture [pdf]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/Fridays/TALENT_Th3b.pdf)
+
 ### Exercises
