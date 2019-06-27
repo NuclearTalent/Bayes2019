@@ -73,6 +73,12 @@ Here we collect questions on Bayesian statistics and its application to nuclear 
 
 1. What are the assumptions (from a Bayesian perspective) underlying the usual application of the least-square method to fit parameters?   
 
+1. What are some common point estimates for parameters?
+
+1. How is it best to present parameter estimates?
+
+1. How do you identify underfitting / overfitting?
+
 <p>[Return to <a href="#Categories">Categories</a>]</p>
 
 ## <a name="Sampling">Sampling</a>
@@ -120,6 +126,12 @@ Here we collect questions on Bayesian statistics and its application to nuclear 
     
 1. Where does the name "Gaussian process" come from?
 
+1. What is the role of the kernel / covariance function?
+
+1. What properties must be fulfilled by a covariance matrix?
+
+1. How can you build a Gaussian emulator?
+
 <p>[Return to <a href="#Categories">Categories</a>]</p>
 
 ## <a name="Machine">Bayesian machine learning</a>
@@ -127,6 +139,8 @@ Here we collect questions on Bayesian statistics and its application to nuclear 
 1. Does machine learning as commonly practiced use Bayesian ideas?
     
 1. What is a Bayesian neural network?
+
+1. What is the main challenge when performing Bayesian output predecitions using a neural network?
 
 <p>[Return to <a href="#Categories">Categories</a>]</p>
 
@@ -140,6 +154,9 @@ Here we collect questions on Bayesian statistics and its application to nuclear 
     
 * P. Gregory,
      [*Bayesian Logical Data Analysis for the Physical Sciences: A Comparative Approach with Mathematica® Support*]("https://www.amazon.com/Bayesian-Logical-Analysis-Physical-Sciences/dp/0521150124/ref=sr_1_1?s=books&ie=UTF8&qid=1538587731&sr=1-1&keywords=gregory+bayesian"), (Cambridge University Press, 2010).
+     
+* D. MacKay,
+     [*Information Theory, Inference, and Learning Algorithms*](http://www.inference.org.uk/mackay/itila/book.html), (Cambridge University Press, 2003).
 
 
 #### Standard statistics references
