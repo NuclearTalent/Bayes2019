@@ -1,3 +1,6 @@
+<p align="right"><a href="https://nucleartalent.github.io/Bayes2019/">Return to home</a></p> 
+
+
 # Lectures of the third week
 
 ## Monday, June 24
