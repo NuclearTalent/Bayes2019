@@ -1,3 +1,5 @@
+<p align="right"><a href="https://nucleartalent.github.io/Bayes2019/">Return to home</a></p> 
+
 ## Bayesian Parameter Estimation
 
 ### Lecture 1: 

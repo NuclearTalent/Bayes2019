@@ -1,3 +1,5 @@
+<p align="right"><a href="https://nucleartalent.github.io/Bayes2019/">Return to home</a></p> 
+
 ## Basics of Bayesian Statistics
 
 ### Lecture 1: Introduction, Bayes theorem

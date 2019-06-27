@@ -1,3 +1,5 @@
+<p align="right"><a href="https://nucleartalent.github.io/Bayes2019/">Return to home</a></p> 
+
 ## Applications of Bayesian Methods in Nuclear Physics
 
 ### Lecture 1: Introduction to EFT and why Bayesian methods are particularly relevant there

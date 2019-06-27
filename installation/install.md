@@ -1,3 +1,6 @@
+<p align="right"><a href="https://nucleartalent.github.io/Bayes2019/">Return to home</a></p> 
+
+
 Students are encouraged to install python and the required modules
 before the start of the school. Please contact the lecturers if you
 encounter problems when setting up the environment.

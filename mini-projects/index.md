@@ -1,3 +1,5 @@
+<p align="right"><a href="https://nucleartalent.github.io/Bayes2019/">Return to home</a></p> 
+
 ## Mini-projects
 
 ### Mini-project 1: Parameter estimation for a toy model of an EFT
