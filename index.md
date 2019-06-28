@@ -40,6 +40,8 @@ Schedule of the lecture weeks:
 * [Week 2](topics/schedule_week2.md)  
 * [Week 3](topics/schedule_week3.md)
 
+The material of the exercise groups can be found [here](topics/exercises.md).  
+
 Jupyter notebooks will be used extensively throughout the course. Some notebooks introducing notebooks can be found [here](topics/jupyter-and-python-basics/).
 
 ### Mini-projects
