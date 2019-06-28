@@ -172,6 +172,10 @@ Here we collect questions on Bayesian statistics and its application to nuclear 
 * [*Prior Choice Recommendations
 *](https://github.com/stan-dev/stan/wiki/Prior-Choice-Recommendations) (stan-dev)
 
+#### Machine learning
+
+* [Hands-On Machine Learning with Scikit-Learn and TensorFlow](https://www.amazon.co.uk/Hands-Machine-Learning-Scikit-Learn-TensorFlow/dp/1491962291) (Aurelien Geron, [github](https://github.com/ageron/handson-ml))
+
 #### Github repositories
 
 * [2019 TALENT course on Learning from Data: Bayesian Methods and Machine Learning](https://github.com/NuclearTalent/Bayes2019) and the associated [website](https://nucleartalent.github.io/Bayes2019/)
