@@ -16,9 +16,9 @@
 ### Bayesian parameter estimation (Dick Furnstahl)
 - Overview of parameter estimation, frequentist vs. bayesian
 - Examples: parameters of Gaussian noise, fitting a straight line
-* [Scanned lecture notes](Lecture_M1b_rjf.pdf)
-* [Intro notebook revisited [ipynb]](parameter_estimation_in_bayesTALENT_intro.ipynb)
-* [Parameter estimation: fitting a straight line [ipynb]](parameter_estimation_fitting_straight_line_I.ipynb)
+* [Scanned lecture notes](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/bayesian-parameter-estimation/Lecture_M1b_rjf.pdf)
+* [Intro notebook revisited [ipynb]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/bayesian-parameter-estimation/parameter_estimation_in_bayesTALENT_intro.ipynb)
+* [Parameter estimation: fitting a straight line [ipynb]](https://github.com/NuclearTalent/Bayes2019/blob/master/topics/bayesian-parameter-estimation/parameter_estimation_fitting_straight_line_I.ipynb)
 
 
 ### Jupyter notebooks and python basics
