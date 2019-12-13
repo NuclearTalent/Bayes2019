@@ -23,6 +23,9 @@ Please follow the instructions at the [installation page](installation/).
 Course material is available at the following public github repository
 [https://github.com/NuclearTalent/Bayes2019](https://github.com/NuclearTalent/Bayes2019)
 
+This repository will be updated to correct for typos and to provide
+more explanations when needed. The end-of-school commit is tagged [v1.0](https://github.com/NuclearTalent/Bayes2019/releases/tag/v1.0).
+
 The following topics will be covered:
 - [Basics of Bayesian statistics](topics/basics-of-bayesian-statistics/)
 - [Bayesian parameter estimation](topics/bayesian-parameter-estimation/)
